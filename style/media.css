@@ -40,6 +40,13 @@
      }
 }
 @media(max-width:1400px){
+    
+    .avia_btn{
+        
+    margin: 91px auto 40px;
+
+    }
+
     .av1 {
         width: 65%;
         margin-right: 80px;
@@ -105,6 +112,10 @@
      .swiper-button-prev{
         width: 40px;
      }
+     .span_line,
+     .span_th {
+        display: none;
+     }
 }
 @media(max-width:764px){
     .tab_wrap {
@@ -115,14 +126,24 @@
     .menu_wrap {
         right: -178%;
     }
+    .avia_btn {
+        width: 70vw;
+        font-size: 5vw;
+    }
     .left_side {
         display: flex;
         align-items: center;
     }
+    .left_span {
+        font-size: 10vw;
+    }
+    .left_title {
+        font-size: 3vw;
+    }
     .left_desc {
-        width: 100vw;
-        margin-left: 40px;
-        margin-right: 40px;
+        width: 80vw;
+        font-size: 3vw;
+        text-align: center;
     }
     .swiper-button-next {
         width: 35px;
