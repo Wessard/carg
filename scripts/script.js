@@ -9,7 +9,6 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
     scrollbar: {
       el: '.swiper-scrollbar',
     },
@@ -38,7 +37,3 @@ window.onload=function(){
         el.style.transition='1.5s';
     })
 }
-let img=document.querySelector('.img_bg')
-let imgg=document.getElementsByTagName('.js_fade_left')
-console.log(img);
-console.log(imgg);
