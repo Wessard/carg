@@ -13,9 +13,6 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
-//   const ab = document.querySelector('.ab_gr')
-//   console.log(ab);
-//   ab.classList.add('active')
 $(document).ready(function(){
     $('.menu_burger').click(function(event) {
     $('.menu_burger,.menu_wrap').toggleClass('active')})
@@ -37,3 +34,14 @@ window.onload=function(){
         el.style.transition='1.5s';
     })
 }
+
+
+var headerBurger=document.querySelector('.header_burger.active');
+var menuActive=document.querySelector('.menu_burger');
+var menuWrap=document.querySelector('.menu_wrap');
+var burList=document.querySelector('.burger_list');
+console.log(burList.clientHeight);
+console.log(menuActive.clientHeight);
+menuWrap.addEventListener('scroll',function(){
+  console.log(menuActive.scrollHeight);
+})

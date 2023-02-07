@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>business-charter</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/media.css">
-    <title>About</title>
 </head>
 <body>
     <header class="header">
@@ -46,30 +46,34 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <a href="../index.html" class="back_btn"><img src="../assets/Arrow1.png" alt="">back</a>
+    <div class="container" name="backBtn">
+        <a href="../temp/business.html" class="back_btn"><img src="../assets/Arrow1.png" alt="">back</a>
     </div>
     <main class="main container ab_gr">
         <span class="span_line"></span>
         <span class="span_line"></span>
         <span class="span_th"></span>
         <div class="left_side">
-            <span class="left_span">01</span>
-                <h2 class="left_title">о нас</h2>
-                <span class="left_tip">Узнайте больше о нашей компании</span>
-                <div class="left_desc">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-                    <p>and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-                    electronic typesetting, remaining essentially unchanged.
-                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                    into electronic </p>
-                </div>
-        </div>
-        <div class="right_side">
-            <img src="../assets/bars.png" alt="" class="right_side_img bars">
+            <span class="left_span">04</span>
+            <h2 class="left_title">БИЗНЕС ЧАРТЕР</h2>
+            <div class="left_choice">
+                <div class="left_choice-btn">В одну сторону</div>
+                <div class="left_choice-btn">Туда обратно</div>
+                <div class="left_choice-btn">Несколько городов</div>
+            </div>
+            <form action="" class="left_form" method="post">
+                <input class="left_form-input" type="text" name="city" placeholder="Ташкент">
+                <input class="left_form-input" type="text" name="where" placeholder="Куда">
+                <input class="left_form-input" type="date" name="back">
+                <input class="left_form-input" type="text" name="when" placeholder="Обратно">
+                <input class="left_form-input" type="text" name="model" placeholder="Самолёт">
+                <input class="left_form-input" type="submit" value="ЗАКАЗАТЬ ЭТОТ РЕЙС" name="accept" placeholder="ЗАКАЗАТЬ ЭТОТ РЕЙС">
+            </form>
         </div>
     </main>
+
+
+
     <script src="../scripts/jquery.js"></script>
     <script src="../scripts/script3.js"></script>
 </body>
