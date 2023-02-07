@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="../style/media.css">
 </head>
 <body>
-    <header class="header">
-        <div class="main_wrap container">
-            <a href="../index.html" class="header_logo">
-                <img src="../assets/header-logo.png" alt="" class="logo_img">
-            </a>
+    <header class="header container">
+        <div class="main_wrap">
+            <div class="hd_lg_wrap">
+                <a href="" class="header_logo"><img src="../assets/header-logo.png" alt="" class="logo_img"></a>
+                <a href="tel:+999999999999" class="call add">+999 ( 99 ) 999-99-99</a>
+            </div>
             <div class="right_pos">
                 <img src="../assets/call-ring.png" alt="" class="call_img">
                 <a href="tel:+999999999999" class="call">+999 ( 99 ) 999-99-99</a>
@@ -26,16 +27,17 @@
                     <img src="../assets/rus.png" alt="" class="lang_img">
                     <img src="../assets/uk.png" alt="" class="lang_img">
                 </div>
-                <div class="menu_burger">
+                <div class="menu_burger" id="menu">
                     <span></span>
                 </div>
                 <div class="menu_wrap">
                     <ul class="burger_list">
-                        <li class="burger_item"><a href="../index.html" class="burger_link">Главная</a></li>
-                        <li class="burger_item"><a href="../temp/about.html" class="burger_link">О нас</a></li>
-                        <li class="burger_item"><a href="../temp/cargo.html" class="burger_link">Карго-авиация</a></li>
-                        <li class="burger_item"><a href="#" class="burger_link">Бизнес-авиация</a></li>
-                        <li class="burger_item"><a href="../temp/avia.html" class="burger_link">Пассажирские<br> авиаперевозки</a></li>
+                    <img src="../assets/xx.png" alt="" class="close_btn">
+                    <li class="burger_item"><a href="index.html" class="burger_link">Главная</a></li>
+                    <li class="burger_item"><a href="temp/about.html" class="burger_link">О нас</a></li>
+                    <li class="burger_item"><a href="temp/cargo.html" class="burger_link">Карго-авиация</a></li>
+                    <li class="burger_item"><a href="#" class="burger_link">Бизнес-авиация</a></li>
+                    <li class="burger_item"><a href="temp/avia.html" class="burger_link">Пассажирские<br> авиаперевозки</a></li>
                        <li class="burger_item"><a href="#" class="burger_link">Хендлинг</a></li>
                        <li class="burger_item"><a href="#" class="burger_link">Туризм</a></li>
                        <li class="burger_item"><a href="#" class="burger_link">Новости</a></li>
@@ -57,16 +59,29 @@
             <span class="left_span">04</span>
             <h2 class="left_title">БИЗНЕС ЧАРТЕР</h2>
             <div class="left_choice">
-                <div class="left_choice-btn">В одну сторону</div>
-                <div class="left_choice-btn">Туда обратно</div>
-                <div class="left_choice-btn">Несколько городов</div>
+                <div class="left_choice-btn" id="non">В одну сторону</div>
+                <div class="left_choice-btn" id="home">Туда обратно</div>
+                <div class="left_choice-btn" id="none">Несколько городов</div>
             </div>
             <form action="" class="left_form" method="post">
                 <input class="left_form-input" type="text" name="city" placeholder="Ташкент">
                 <input class="left_form-input" type="text" name="where" placeholder="Куда">
-                <input class="left_form-input" type="date" name="back">
-                <input class="left_form-input" type="text" name="when" placeholder="Обратно">
-                <input class="left_form-input" type="text" name="model" placeholder="Самолёт">
+                <input class="left_form-input" type="date" value="data" name="when">
+                <input class="left_form-input" type="date" id="back" value="data" name="back" placeholder="Обратно">
+                <select class="left_form-input" name="ai_cr" id="air">
+                    <option value="0">
+                        Самолёт
+                    </option>
+                    <option value="0">
+                        Маленький
+                    </option>
+                    <option value="0">
+                        Средний
+                    </option>
+                    <option value="0">
+                        Большой
+                    </option>
+                </select>
                 <input class="left_form-input" type="submit" value="ЗАКАЗАТЬ ЭТОТ РЕЙС" name="accept" placeholder="ЗАКАЗАТЬ ЭТОТ РЕЙС">
             </form>
         </div>

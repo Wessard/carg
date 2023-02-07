@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('.menu_burger').click(function(event) {
-    $('.menu_burger,.menu_wrap').toggleClass('active')});
+    $('.menu_burger,.close_btn').click(function(event) {
+    $('.menu_burger,.menu_wrap,.close_btn').toggleClass('active')});
     $('.main_gr').addClass('_active');
     $('.carg_opa').addClass('_active');
 })
@@ -21,8 +21,3 @@ var swiper2 = new Swiper(".mySwiper2", {
         swiper: swiper,
     },
 });
-var burger=document.querySelector('.menu_burger')
-var idd=document.getElementById('d_no');
-if(burger.classList.contains('active')){
-    burger.style.display = 'none'
-}

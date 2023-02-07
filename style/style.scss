@@ -216,6 +216,7 @@ input::-webkit-search-results-decoration { display: none; }
 .burger_link:focus::after {
     transform: scale(1);
 }
+
 .menu_wrap {
   position: fixed;
   top: 0;
@@ -239,6 +240,13 @@ input::-webkit-search-results-decoration { display: none; }
   z-index: 100;
   top: 40px;
   right: 1%;
+  opacity: 0;
+  visibility: hidden;
+}
+.close_btn {
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
 }
 .menu_burger.active:before{
   transform: rotate(45deg);
@@ -263,6 +271,7 @@ input::-webkit-search-results-decoration { display: none; }
   margin-right: 160px;
   margin-top: 135px;
   margin-bottom: 68px;
+  align-items: flex-end;
 }
 
 .burger_item {
@@ -673,6 +682,11 @@ input[type="text"] {
     font-size: 15px;
     line-height: 19px;
     color: rgba(0, 0, 0, 0.91);
+    transition: .5s;
+    cursor: pointer;
+  }
+  &-btn:hover{
+    color: #00AFEF;
   }
 }
 .left_form {
@@ -707,6 +721,25 @@ input[type=submit]:hover {
     #A0B0B9;
     cursor: pointer;
     }
+#back {
+  display: none;
+  transition: 1.5s;
+}
+#back.active{
+  display: block;
+  transition: 1.5s;
+}
+}
+.left_form select {
+  border-radius: 10px;
+  font-family: $intReg;
+  font-size: 15px;
+  line-height: 19px;
+  color: 
+  #A0B0B9;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 /* ??????????????????????????////////JET STYLES/////////????????????????????? */
 

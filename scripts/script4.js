@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('.menu_burger').click(function(event) {
-    $('.menu_burger,.menu_wrap').toggleClass('active')});
+    $('.menu_burger,.close_btn').click(function(event) {
+    $('.menu_burger,.menu_wrap,.close_btn').toggleClass('active')});
     $('.carg_opa').addClass('_active');
     $('.main_gr').addClass('_active');
 })

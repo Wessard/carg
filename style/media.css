@@ -11,6 +11,10 @@
 
 }
 @media(max-width:1600px){
+    .close_btn.active{
+        width: 3vw;
+        height: 3vw;
+    }
     .air_r_img {
         width: 70vw;
     }
@@ -118,6 +122,10 @@
      }
     }
 @media(max-width:1400px){
+    .close_btn.active{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
     .swiper-bt-prev{
         position: absolute;
         top: 40%;
@@ -188,6 +196,10 @@
     }
 }
 @media(max-width:1100px){
+    .close_btn.active{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
     .ar_ct_span:last-of-type{
         margin: 1rem;
     }
@@ -226,6 +238,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
     }
     .left_choice{
         margin-top: 0;
@@ -271,6 +284,10 @@
      }
 }
 @media(max-width:816px){
+    .close_btn.active{
+        width: 4vw;
+        height: 4vw;
+    }
     .swiper-bt-prev{
         position: absolute;
         top: 30%;
@@ -418,6 +435,10 @@
     }
 }
 @media(max-width:600px){
+    .close_btn.active{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
     .swiper-bt-prev{
         position: absolute;
         top: 20%;
@@ -517,6 +538,9 @@
         text-align: center;
         margin: 15px auto 0px;
         font-size: 3vw;
+     }
+     .left_form select{
+        margin-bottom: 1.25rem;
      }
     .add{
         margin: 20px 0;
