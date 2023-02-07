@@ -224,16 +224,9 @@ input::-webkit-search-results-decoration { display: none; }
   width: 542px;
   background-color: #302F2F;
   transition: all 0.5s ease;
-  overflow: scroll;
 }
 .menu_wrap.active{
   right: 0;
-}
-.menu_burger.active{
-  position: relative;
-  z-index: 100;
-  top: 40px;
-  right: 1%;
 }
 .busavia {
   position: relative;
@@ -241,7 +234,12 @@ input::-webkit-search-results-decoration { display: none; }
   width: 50vw;
   overflow-y: hidden;
 }
-
+.menu_burger.active{
+  position: relative;
+  z-index: 100;
+  top: 40px;
+  right: 1%;
+}
 .menu_burger.active:before{
   transform: rotate(45deg);
   top: -3px;

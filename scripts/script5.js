@@ -21,3 +21,8 @@ var swiper2 = new Swiper(".mySwiper2", {
         swiper: swiper,
     },
 });
+var burger=document.querySelector('.menu_burger')
+var idd=document.getElementById('d_no');
+if(burger.classList.contains('active')){
+    burger.style.display = 'none'
+}

@@ -35,7 +35,17 @@ window.onload=function(){
     })
 }
 
-
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("menu").style.top = "0";
+    document.getElementById('menu_wrap').style.top="0";
+  } else {
+    document.getElementById("menu").style.top = "-500px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 var headerBurger=document.querySelector('.header_burger.active');
 var menuActive=document.querySelector('.menu_burger');
 var menuWrap=document.querySelector('.menu_wrap');
