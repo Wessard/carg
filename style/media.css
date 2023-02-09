@@ -11,36 +11,50 @@
 
 }
 @media(max-width:1600px){
+    .biz_mt {
+        margin-top: 90vh;
+        align-items: center;
+    }
+    .mySwiper2 {
+        margin-top: 50px;
+    }
+    .table_last-btn {
+        margin-bottom: 100px;
+    }
     .close_btn.active{
         width: 3vw;
         height: 3vw;
     }
     .air_r_img {
-        width: 70vw;
+        width: 60vw;
+    }
+    .busavia {
+        width: 50vw;
+        position: absolute;
+        top: -50px;
+        right: 20vw;
     }
     .swiper-bt-prev{
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 55%;
+        left: 45%;
         width: 3.5vw;
     }
     .swiper-bt-next{
         position: absolute;
-        top: 50%;
-        right: 50%;
+        top: 55%;
+        right: 45%;
         width: 3.5vw;
     }
     .ar_ct_bx {
         padding: 1.25rem;
         margin-bottom: 0;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
     .ar_ct_pr {
         width: 100%;
         display: flex;
-        flex-direction: column;
     }
     .ar_ct_pr:not(:last-child){
         margin: 0;
@@ -52,9 +66,11 @@
     }
     .f_bl {
         flex-wrap: nowrap;
-        flex-direction: column;
-        overflow: scroll;
+        flex-direction: column-reverse;
+        justify-content: center;
         align-items: center;
+        margin-bottom: 110px;
+        margin-top: 215px;
     }
     .f_bl_r {
         margin-left: 0;
@@ -72,11 +88,9 @@
     .f_bl_l {
         margin-left: 0;
     }
-    .left_side{
-        align-items: center;
-    }
     .ab_gr {
         flex-direction: column-reverse;
+        align-items: center;
     }
     .jet_wrap {
         flex-direction: column-reverse;
@@ -91,18 +105,11 @@
         margin: 0 40px;
         justify-content: space-around;
     }
-    .bars{
-        position: relative;
-    }
-     .right_side {
-        right: 0;
-     }
+
      .swiper-button-next {
-        top: 80%;
         right: 30px;
      }
      .swiper-button-prev{
-        top: 80%;
         left: 30px;
      }
      .test {
@@ -111,32 +118,64 @@
         margin-top: 60px;
      }
      .main_gr {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
      }
      .av2 {
-        position: relative;
+        width: 60vw;
+        right: 0;
+        left: 250px;
+     }
+     .taxi_jet {
+        right: 0;
+        top: 10px;
+        /* right: 10vw; */
+     }
+     .left_tip{
+        text-align: center;
+        width: 50vw;
+     }
+    .m_mt_vh{
+        align-items: center;
+        margin-top: 100vh;
+    }
+     .ab_gr {
         width: 80vw;
      }
      .av1 {
-        width: 80vw;
-     }
+        width: 60vw;
+        right: 0;
+        left: 250px;
+    }
+    .Ellipse{
+        display: none;
+    }
+    .avia_gr {
+        justify-content: center;
+    }
+    .img_media {
+        width: 50vw;
+        top: -180px;
+        left: 18%;
+    }
     }
 @media(max-width:1400px){
+    
     .close_btn.active{
         width: 3.5vw;
         height: 3.5vw;
     }
     .swiper-bt-prev{
         position: absolute;
-        top: 40%;
-        left: 50%;
-        width: 4.5vw;
+        top: 35%;
+        left: 45%;
+        width: 3.5vw;
     }
     .swiper-bt-next{
         position: absolute;
-        top: 40%;
-        right: 50%;
-        width: 4.5vw;
+        top: 35%;
+        right: 45%;
+        width: 3.5vw;
     }
     .table_wrap {
         flex-wrap: wrap;
@@ -150,13 +189,10 @@
         width: 65%;
         margin-right: 80px;
     }
-    .bars {
+    .img_media {
         width: 80vw;
     }
     .img_bg{
-        width: 80vw;
-    }
-    .busavia{
         width: 80vw;
     }
     .tab_wrap {
@@ -194,8 +230,35 @@
     .add{
         display: block;
     }
+    .img_media {
+        width: 50vw;
+        top: 0;
+    }
+    .m_mt_vh{
+        margin-top: 80vh;
+    }
 }
 @media(max-width:1100px){
+    .swiper-bt-prev{
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        width: 3.5vw;
+    }
+    .swiper-bt-next{
+        position: absolute;
+        top: 35%;
+        right: 45%;
+        width: 3.5vw;
+    }
+    #btn_none {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    #btn_non {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
     .close_btn.active{
         width: 3.5vw;
         height: 3.5vw;
@@ -234,6 +297,7 @@
     input[type="submit"]{
         font-size: 2.5vw;
     }
+
     .left_form{
         display: flex;
         flex-wrap: wrap;
@@ -251,9 +315,6 @@
         margin: 60px 25px 0;
         text-align: center;
     }
-    .busavia {
-        top: 100px;
-    }
     .menu_burger.active{
         right: 30px;
       }
@@ -265,9 +326,6 @@
     }
     .jet_img {
         width: 50vw;
-    }
-    .av2{
-        width: 80vw;
     }
     .av1 {
         display: none;
@@ -282,22 +340,51 @@
      .span_th {
         display: none;
      }
+     .busavia{
+        width: 50vw;
+        top: 20px;
+        right: 18vw;
+    }
+    .av2{
+        width: 70vw;
+        left: 10vw;
+    }
+    .img_media {
+        width: 50vw;
+        top: 0;
+    }
 }
 @media(max-width:816px){
+    .ar_ct_bx{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ar_ct_pr {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .ar_ct_pr:first-child {
+        margin-bottom: 35px;
+    }
+    .taxi_card-img {
+        width: 15vw;
+    }
     .close_btn.active{
         width: 4vw;
         height: 4vw;
     }
     .swiper-bt-prev{
         position: absolute;
-        top: 30%;
-        left: 50%;
+        top: 25%;
+        left: 45%;
         width: 3.5vw;
     }
     .swiper-bt-next{
         position: absolute;
-        top: 30%;
-        right: 50%;
+        top: 25%;
+        right: 45%;
         width: 3.5vw;
     }
     .jet_form input[type=text], .jet_form input[type=number], .jet_form input[type=email], .jet_form input[type=tel]{
@@ -328,6 +415,10 @@
     }
 }
 @media(max-width:764px){
+
+    .m_mt_vh{
+        margin-top: 50vh;
+     }
     .ar_ct_title {
         font-size: 3.5vw;
     }
@@ -390,7 +481,7 @@
         width: 70vw;
         font-size: 5vw;
     }
-    .left_side {
+    .m_mt_vh {
         display: flex;
         align-items: center;
     }
@@ -413,12 +504,12 @@
         width: 35px;
      }
      .swiper-button-prev{
-        width: 35px;
+         width: 35px;
+    }
+    .right_side_img{
+            margin-top: 80px;
      }
-     .right_side_img{
-        margin-top: 80px;
-     }
-     .taxi_jet {
+    .taxi_jet {
         margin-top: 0;
     }
     .jet_span {
@@ -431,25 +522,53 @@
         min-width: none !important;
     }
     .extra_img {
-        height: 50vh;
+        height: 40vh;
+        width: 60vw;
+    }
+    .right_side {
+        right: 0;
+     }
+     .av_bn {
+         font-size: 4vw;
+     }
+     .busavia {
+        margin-top: 0;
+     }
+     .av2 {
+        margin-top: 0;
+     }
+     .left_side {
+        align-items: center;
+        width: 100%;
+     }
+     .biz_mt {
+        margin-top: 30vh;
+        width: 100vw;
     }
 }
 @media(max-width:600px){
+    .palete_img {
+        right: 0;
+    }
+    .m_mt_vh{
+        margin-top: 120vh;
+        width: 80vw;
+     }
     .close_btn.active{
         width: 5.5vw;
         height: 5.5vw;
     }
     .swiper-bt-prev{
         position: absolute;
-        top: 20%;
-        left: 50%;
-        width: 4.5vw;
+        top: 25%;
+        left: 45%;
+        width: 3.5vw;
     }
     .swiper-bt-next{
         position: absolute;
-        top: 20%;
-        right: 50%;
-        width: 4.5vw;
+        top: 25%;
+        right: 45%;
+        width: 3.5vw;
     }
     .empty_form input[type="submit"] {
         width: 70vw;
@@ -469,13 +588,13 @@
     }
     .taxi_last-btn {
         font-size: 3.5vw;
-        padding: 1.25rem;
+        padding: 0.5rem;
         margin-top: 1rem;
     }
     .table_left div {
         width: 50vw;
     }
-     .table_right div {
+    .table_right div {
         width: 50vw;
     }
     .burger_link {
@@ -517,22 +636,22 @@
         height: 5px;
     }
     .swiper-button-next {
-        top: 85%;
-        right: 10px;
+        top: 180px;
+        right: 0;
         width: 35px;
         position: fixed !important;
      }
      .swiper-button-prev{
-        top: 85%;
-        left: 10px;
+        top: 180px;
+        left: 0;
         width: 35px;
         position: fixed !important;
      }
      .extra_prev {
-        top: 50%;
+        left: 0px;
      }
      .extra_next {
-        top: 50%;
+        right: 0px;
      }
      .left_tip {
         text-align: center;
@@ -563,7 +682,6 @@
         margin-top: 6vw;
     }
     .table_wrap {
-        width: 100vw;
         padding: 0 15px;
     }
     .table_wrap-btn:not(:first-child) {
@@ -593,5 +711,37 @@
     .ar_ct_img {
         width: 4.5vw;
     }
-
+    .left_span {
+        text-align: center;
+    }
+    .m_mt_vh{
+        margin-top: 30vh;
+     }
+     .cargo_mt {
+        margin-top: 0;
+     }
+     .back_btn {
+        margin: 0 auto;
+     }
+}
+@media(max-width:340px){
+    .swiper-bt-prev{
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        width: 3.5vw;
+    }
+    .swiper-bt-next{
+        position: absolute;
+        top: 20%;
+        right: 45%;
+        width: 3.5vw;
+    }
+    /* .left_side{
+        margin-top: 40vh;
+        width: 80vw;
+     } */
+     .m_mt_vh{
+        margin-top: 25vh;
+     }
 }
