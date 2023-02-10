@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.ab_gr' || null).addClass('_active')
   $('.jet_wrap' || null).addClass('_active')
   $('.avia_gr' || null).addClass('_active')
-  // $('.av1,.av2,.Ellipse'||null).addClass('active')
   let img = document.querySelector('.img_bg') || null;
   let left = document.querySelectorAll('.js_fade_left') || null;
   let right = document.querySelectorAll('.js_fade_right') || null;
@@ -33,7 +32,6 @@ window.addEventListener('DOMContentLoaded', function () {
   var btn_non = document.getElementById('btn_non') || null;
   home.addEventListener('click', function () {
     back.classList.add('active');
-    btnN.classList.remove('active');
   })
   non.addEventListener('click', () => {
     back.classList.remove('active');

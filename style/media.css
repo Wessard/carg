@@ -754,6 +754,12 @@
         height: 70vw;
      }
 }
+@media(max-width:480px){
+    .form_btn-wrap{
+        flex-direction: column;
+    }
+
+}
 @media(max-width:340px){
     .swiper-bt-prev{
         position: absolute;
