@@ -573,6 +573,9 @@
     }
 }
 @media(max-width:600px){
+    #btn_non {
+        font-size: 4.5vw;
+    }
     .palete_img {
         right: 0;
     }
@@ -614,7 +617,7 @@
     }
     .taxi_last-btn {
         font-size: 3.5vw;
-        padding: 0.5rem;
+        padding: 15px;
         margin-top: 1rem;
     }
     .table_left div {
