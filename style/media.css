@@ -44,8 +44,8 @@
         margin-bottom: 100px;
     }
     .close_btn.active{
-        width: 3vw;
-        height: 3vw;
+        width: 2vw;
+        height: 2vw;
     }
     .air_r_img {
         width: 60vw;
@@ -180,6 +180,9 @@
         width: 50vw;
         top: -180px;
         left: 18%;
+    }
+    .av_bn {
+        margin: 41px auto 0;
     }
     }
 @media(max-width:1400px){
@@ -584,19 +587,19 @@
     .swiper-bt-prev{
         position: absolute;
         top: 25%;
-        left: 45%;
-        width: 3.5vw;
+        left: 40%;
+        width: 5.5vw;
     }
     .swiper-bt-next{
         position: absolute;
         top: 25%;
-        right: 45%;
-        width: 3.5vw;
+        right: 40%;
+        width: 5.5vw;
     }
     .empty_form input[type="submit"] {
         width: 70vw;
         font-size: 2.4vw;
-        padding: 1.25rem;
+        padding: 2em;
     }
     .empty_form-input {
         width: 70vw;
