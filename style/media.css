@@ -10,7 +10,29 @@
     }
 
 }
+@media(min-width:1600px){
+    .jet_img{
+        position: absolute;
+        left: 200px;
+        top: -100px;
+    }
+}
 @media(max-width:1600px){
+    .jet_form-submit{
+        margin-bottom: 40px;
+    }
+    .jet_form{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .left_side {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .empty_form{
+        margin-top: 1.5rem;
+    }
     .biz_mt {
         margin-top: 90vh;
         align-items: center;
@@ -94,6 +116,7 @@
     }
     .jet_wrap {
         flex-direction: column-reverse;
+        align-items: center;
     }
     .jet_img {
         position: relative;
@@ -133,7 +156,7 @@
      }
      .left_tip{
         text-align: center;
-        width: 50vw;
+        width: 45vw;
      }
     .m_mt_vh{
         align-items: center;
@@ -264,7 +287,7 @@
         height: 3.5vw;
     }
     .ar_ct_span:last-of-type{
-        margin: 1rem;
+        margin: 0.5rem;
     }
     .test {
         margin-top: 1.25rem;
@@ -655,7 +678,7 @@
      }
      .left_tip {
         text-align: center;
-        margin: 15px auto 0px;
+        margin: 15px;
         font-size: 3vw;
      }
      .left_form select{
@@ -722,6 +745,10 @@
      }
      .back_btn {
         margin: 0 auto;
+     }
+     .jet_img {
+        width: 70vw;
+        height: 70vw;
      }
 }
 @media(max-width:340px){

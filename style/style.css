@@ -1030,7 +1030,7 @@ input[type=text] {
 .empty_form {
   display: grid;
   grid-template-columns: repeat(2, 248px);
-  margin-top: 44px;
+  margin-top: 44px auto 0;
   grid-gap: 26px;
 }
 
