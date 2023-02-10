@@ -573,8 +573,12 @@
     }
 }
 @media(max-width:600px){
+    input[type="submit"] {
+        padding: 15px;
+    }
     #btn_non {
         font-size: 4.5vw;
+        padding: 15px;
     }
     .palete_img {
         right: 0;
@@ -602,7 +606,7 @@
     .empty_form input[type="submit"] {
         width: 70vw;
         font-size: 2.4vw;
-        padding: 2em;
+        padding: 15px;
     }
     .empty_form-input {
         width: 70vw;
