@@ -21,6 +21,9 @@
     .jet_form-submit{
         margin-bottom: 40px;
     }
+    .palete_img {
+        right: 0;
+    }
     .jet_form{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -579,12 +582,9 @@
         width: 100%;
     }
     #btn_non {
-        font-size: 5.5vw;
+        font-size: 4.5vw;
         padding: 15px;
         margin-bottom: 30px;
-    }
-    .palete_img {
-        right: 0;
     }
     .m_mt_vh{
         margin-top: 120vh;
@@ -695,9 +695,6 @@
         margin: 15px;
         font-size: 3vw;
      }
-     /* .left_form select{
-        margin-bottom: 1.25rem;
-     } */
     .add{
         margin: 20px 0;
     }
