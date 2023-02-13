@@ -1,32 +1,25 @@
-let aviaitem=document.querySelectorAll('.burger_item');
-let icon=document.querySelectorAll('.mini_sign')
-aviaitem.forEach((el)=> {
-  el.addEventListener('mouseover',()=> {
-    icon.forEach((el)=> {
-      el.classList.add('active')
-    })
-  })
-  el.addEventListener('mouseleave',()=> {
-    icon.classList.remove('active')
+let intervalId;
+
+document.querySelectorAll('.dropdown-toggle').forEach((el)=> {
+  el.addEventListener('click', el=> {
+    const menu=el.currentTarget.dataset.path;
+    document.querySelectorAll('.dropdown-menu').forEach( el=> {
+      if(!document.querySelector(`[data-target=${menu}]`).classList.contains('open')){
+        document.querySelector(`[data-target=${menu}]`).classList.add('menu_active')
+        intervalId = setTimeout(()=> {
+          document.querySelector(`[data-target=${menu}]`).classList.add('open');
+        },0);
+      }
+      if(document.querySelector(`[data-target=${menu}]`).classList.contains('open')){
+        clearTimeout(intervalId);
+        document.querySelector(`[data-target=${menu}]`).classList.remove('menu_active')
+        intervalId=setTimeout(()=> {
+          document.querySelector(`[data-target=${menu}]`).classList.remove('open')
+        },0)
+      }
+    });
   })
 })
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
-
-  var dropdowns = document.getElementsByClassName("dropdown-content");
-  var i;
-  for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-    }
-  }
-}
-}
 
 document.addEventListener('DOMContentLoaded', function () {
   $('.menu_burger,.close_btn' || null).click(function (event) {
