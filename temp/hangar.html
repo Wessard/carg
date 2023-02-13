@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangar</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../style/all.min.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/media.css">
 </head>
@@ -14,20 +15,20 @@
         <header class="header container">
             <div class="main_wrap">
                 <div class="hd_lg_wrap">
-                    <a href="" class="header_logo"><img src="../assets/header-logo.png" alt="" class="logo_img"></a>
+                    <a href="" class="header_logo"><img src="assets/header-logo.png" alt="" class="logo_img"></a>
                     <a href="tel:+999999999999" class="call add">+999 ( 99 ) 999-99-99</a>
                 </div>
                 <div class="right_pos">
-                    <img src="../assets/call-ring.png" alt="" class="call_img">
+                    <img src="assets/call-ring.png" alt="" class="call_img">
                     <a href="tel:+999999999999" class="call">+999 ( 99 ) 999-99-99</a>
                     <div class="inp_box">
-                        <img src="../assets/search-logo.png" alt="" class="search_logo">
-                        <input type="search" class="inp_search">
+                        <img src="assets/search-logo.png" alt="" class="search_logo">
+                        <input type="search" class="inp_search" id="inp_search">
                     </div>
                     <div class="lang_wrap">
-                        <img src="../assets/uz.png" alt="" class="lang_img">
-                        <img src="../assets/rus.png" alt="" class="lang_img">
-                        <img src="../assets/uk.png" alt="" class="lang_img">
+                        <img src="assets/uz.png" alt="" class="lang_img">
+                        <img src="assets/rus.png" alt="" class="lang_img">
+                        <img src="assets/uk.png" alt="" class="lang_img">
                     </div>
                     <div class="menu_burger" id="menu">
                         <span></span>
@@ -35,16 +36,116 @@
                     <div class="menu_wrap">
                         <ul class="burger_list">
                         <img src="../assets/xx.png" alt="" class="close_btn">
-                        <li class="burger_item"><a href="../index.html" class="burger_link">Главная</a></li>
-                        <li class="burger_item"><a href="about.html" class="burger_link">О нас</a></li>
-                        <li class="burger_item"><a href="cargo.html" class="burger_link">Карго-авиация</a></li>
-                        <li class="burger_item"><a href="business.html" class="burger_link">Бизнес-авиация</a></li>
-                        <li class="burger_item"><a href="avia.html" class="burger_link">Пассажирские<br> авиаперевозки</a></li>
-                           <li class="burger_item"><a href="#" class="burger_link">Хендлинг</a></li>
-                           <li class="burger_item"><a href="#" class="burger_link">Туризм</a></li>
-                           <li class="burger_item"><a href="#" class="burger_link">Новости</a></li>
-                           <li class="burger_item"><a href="#" class="burger_link">Информация</a></li>
-                           <li class="burger_item"><a href="#" class="burger_link">Контакты</a></li> 
+                        <div class="dropdown">
+                            <a href="../index.html" class="btn btn-secondary">
+                              Главная
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="one"></i>
+                            <ul data-target="one" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a href="./temp/about.html" class="btn btn-secondary dropdown-toggle">
+                                О нас
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="two"></i>
+                            <ul data-target="two" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                          </div>
+                        <div class="dropdown">
+                            <a href="./temp/cargo.html" class="btn btn-secondary dropdown-toggle">
+                                Карго-авиация
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="three"></i>
+                            <ul data-target="three" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                          </div>
+                        <div class="dropdown">
+                            <a href="./temp/business.html" class="btn btn-secondary dropdown-toggle">
+                                Бизнес-авиация
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="four"></i>
+                            <ul data-target="four" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                          </div>
+                        <div class="dropdown">
+                            <a href="./temp/avia.html" class="btn btn-secondary dropdown-toggle">
+                                Пассажирские<br> авиаперевозки
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="five"></i>
+                            <ul data-target="five" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                          </div>
+                        <div  class="dropdown">
+                            <a href="" class="btn btn-secondary dropdown-toggle">
+                                Хендлинг
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="six"></i>
+                            <ul data-target="six" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                          </div>
+                        <div class="dropdown">
+                            <a  href="" class="btn btn-secondary dropdown-toggle">
+                                Туризм
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="seven"></i>
+                            <ul data-target="seven" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                          </div>
+                        <div class="dropdown">
+                            <a href="" class="btn btn-secondary dropdown-toggle">
+                                Новости
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="eight"></i>
+                            <ul data-target="eight" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                          </div>
+                        <div class="dropdown">
+                            <a href="" class="btn btn-secondary dropdown-toggle">
+                                Информация
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="nine"></i>
+                            <ul data-target="nine" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                          </div>
+                        <div class="dropdown">
+                            <a href="" class="btn btn-secondary dropdown-toggle">
+                                Контакты
+                            </a>
+                            <i class="fas fa-chevron-right ar_st btn-secondary dropdown-toggle" data-path="ten"></i>
+                            <ul data-target="ten" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Oi</a></li>
+                              <li><a class="dropdown-item" href="#">OIOI</a></li>
+                              <li><a class="dropdown-item" href="#">OIOIOI</a></li>
+                            </ul>
+                          </div> 
                         </ul>
                     </div>
                 </div>

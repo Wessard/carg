@@ -1499,7 +1499,22 @@ input[type=text] {
   transform: scale(1);
 }
 
+.ar_st {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.active_st {
+  transform: rotate(90deg);
+  color: #00AFEF;
+}
+
 .btn {
+  display: inline-block;
   color: #fff;
   font-family: "Gilroy-Regular";
   font-size: 28px;
@@ -1514,19 +1529,16 @@ input[type=text] {
 .dropdown-menu {
   padding: 15px;
   background-color: #a6a8ac;
-  display: none;
+  opacity: 0;
   position: absolute;
-  transition: 0.8s;
   visibility: hidden;
 }
 
 .menu_active {
-  visibility: visible;
+  opacity: 1;
   position: relative;
-  display: block;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  visibility: visible;
+  width: 265px;
 }
 
 .dropdown-item {

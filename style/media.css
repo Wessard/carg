@@ -444,7 +444,14 @@
     }
 }
 @media(max-width:764px){
-
+    .ar_st {
+        position: relative;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+        right: -10px;
+        transition: .5s;
+      }
     .m_mt_vh{
         margin-top: 50vh;
      }
