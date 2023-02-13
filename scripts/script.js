@@ -1,3 +1,33 @@
+let aviaitem=document.querySelectorAll('.burger_item');
+let icon=document.querySelectorAll('.mini_sign')
+aviaitem.forEach((el)=> {
+  el.addEventListener('mouseover',()=> {
+    icon.forEach((el)=> {
+      el.classList.add('active')
+    })
+  })
+  el.addEventListener('mouseleave',()=> {
+    icon.classList.remove('active')
+  })
+})
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   $('.menu_burger,.close_btn' || null).click(function (event) {
   $('.menu_burger,.menu_wrap,.close_btn' || null).toggleClass('active')

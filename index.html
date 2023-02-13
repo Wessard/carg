@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air-Samarkand</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style/all.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
 </head>
@@ -34,18 +35,27 @@
                 <div class="menu_wrap">
                     
                     <ul class="burger_list">
-
                     <img src="assets/xx.png" alt="" class="close_btn">
-                    <li class="burger_item"><a href="index.html" class="burger_link">Главная</a></li>
-                    <li class="burger_item"><a href="temp/about.html" class="burger_link">О нас</a></li>
+                        <div class="dropdown">
+                            <div onclick="myFunction()" class="dropbtn">Главная</div>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                            <span class="mini_sign"><i class="fas fa-fighter-jet"></i></span>
+                        </div>
+                    <li class="burger_item"><a href="temp/about.html" class="burger_link">О нас</a>
+                     <span class="mini_sign"><i class="fas fa-fighter-jet"></i></span>
+                    </li>
                     <li class="burger_item"><a href="temp/cargo.html" class="burger_link">Карго-авиация</a></li>
                     <li class="burger_item"><a href="temp/business.html" class="burger_link">Бизнес-авиация</a></li>
                     <li class="burger_item"><a href="temp/avia.html" class="burger_link">Пассажирские<br> авиаперевозки</a></li>
-                       <li class="burger_item"><a href="#" class="burger_link">Хендлинг</a></li>
-                       <li class="burger_item"><a href="#" class="burger_link">Туризм</a></li>
-                       <li class="burger_item"><a href="#" class="burger_link">Новости</a></li>
-                       <li class="burger_item"><a href="#" class="burger_link">Информация</a></li>
-                       <li class="burger_item"><a href="#" class="burger_link">Контакты</a></li> 
+                    <li class="burger_item"><a href="#" class="burger_link">Хендлинг</a></li>
+                    <li class="burger_item"><a href="#" class="burger_link">Туризм</a></li>
+                    <li class="burger_item"><a href="#" class="burger_link">Новости</a></li>
+                    <li class="burger_item"><a href="#" class="burger_link">Информация</a></li>
+                    <li class="burger_item"><a href="#" class="burger_link">Контакты</a></li> 
                     </ul>
                 </div>
             </div>
