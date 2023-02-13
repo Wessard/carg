@@ -562,6 +562,7 @@ input::-webkit-search-results-decoration {
 .img_media {
   position: absolute;
   right: 0;
+  top: -140px;
 }
 
 .av1 {
@@ -579,12 +580,27 @@ input::-webkit-search-results-decoration {
   top: -50px;
   z-index: -2;
   right: -149px;
+  transform: translate(2500px);
+  visibility: hidden;
+  transition: 2s;
+}
+
+.av2.active_av {
+  transform: translate(0, 0);
+  visibility: visible;
 }
 
 .Ellipse {
   position: absolute;
   top: 380px;
   right: 0;
+  transform: translate(0, 2500px);
+  transition: 0.8s;
+}
+
+.Ellipse.active_av {
+  transform: translate(0, 0);
+  visibility: visible;
 }
 
 .left_desc {
@@ -868,8 +884,13 @@ input[type=text] {
   grid-column: 5;
 }
 
-#btn_non.active {
-  grid-column: 1;
+#btn_del {
+  display: none;
+}
+
+#btn_del.active {
+  display: block;
+  grid-column: 5;
 }
 
 .btn_non_inp {
@@ -1337,7 +1358,7 @@ input[type=text] {
   fill: #000;
 }
 
-/* ?????????AIR CAT STYLES */
+/* ?????????AIR CATALOG STYLES?????????? */
 .air_cat_l {
   width: 958px;
 }
@@ -1395,6 +1416,7 @@ input[type=text] {
   justify-content: space-between;
 }
 
+/* SCROLLBAR STYLE */
 ::-webkit-scrollbar {
   display: none;
 }
@@ -1416,4 +1438,23 @@ input[type=text] {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: blue;
+}
+
+.active_b {
+  animation-name: bounce;
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-delay: 500ms;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, -20px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(0, -20px);
+  }
 }/*# sourceMappingURL=style.css.map */

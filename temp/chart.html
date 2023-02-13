@@ -64,29 +64,32 @@
                 <div class="left_choice-btn" id="home">Туда обратно</div>
                 <div class="left_choice-btn" id="none">Несколько городов</div>
             </div>
-            <form action="" class="left_form" id="left_form" method="post">
-                <input class="left_form-input" type="text" name="city" placeholder="Ташкент">
-                <input class="left_form-input" type="text" name="where" placeholder="Куда">
-                <input class="left_form-input" type="date" value="data" name="when">
-                <input class="left_form-input" type="date" id="back" value="data" name="back" placeholder="Обратно">
-                <select class="left_form-input" name="ai_cr" id="air">
-                    <option value="0">
-                        Самолёт
-                    </option>
-                    <option value="0">
-                        Маленький
-                    </option>
-                    <option value="0">
-                        Средний
-                    </option>
-                    <option value="0">
-                        Большой
-                    </option>
-                </select>
-            </form>
+            <div class="form_box">
+                <form action="" class="left_form" id="left_form" method="post">
+                    <input class="left_form-input" type="text" name="city" placeholder="Ташкент">
+                    <input class="left_form-input" type="text" name="where" placeholder="Куда">
+                    <input class="left_form-input" type="date" value="data" name="when">
+                    <input class="left_form-input" type="date" id="back" value="data" name="back" placeholder="Обратно">
+                    <select class="left_form-input" name="ai_cr" id="air">
+                        <option value="0">
+                            Самолёт
+                        </option>
+                        <option value="0">
+                            Маленький
+                        </option>
+                        <option value="0">
+                            Средний
+                        </option>
+                        <option value="0">
+                            Большой
+                        </option>
+                    </select>
+                </form>
+            </div>
             <div class="form_btn-wrap">
                 <input class="btn_non_inp" id="btn_non" type="submit" value="ЗАКАЗАТЬ ЭТОТ РЕЙС" name="accept" placeholder="ЗАКАЗАТЬ ЭТОТ РЕЙС">
-                <input class="btn_non_inp" id="btn_none" type="button" value="ДОБАВИТЬ БИЛЕТ" name="accept" placeholder="">
+                <input class="btn_non_inp" id="btn_none" type="button" value="ДОБАВИТЬ БИЛЕТ" name="add" placeholder="">
+                <input class="btn_non_inp" id="btn_del" type="button" value="УДАЛИТЬ БИЛЕТ" name="delete" placeholder="">
             </div>
         </div>
     </main>
