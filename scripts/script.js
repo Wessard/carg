@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
   let img = document.querySelector('.img_bg') || null;
   let left = document.querySelectorAll('.js_fade_left') || null;
   let right = document.querySelectorAll('.js_fade_right') || null;
-  img.classList.add('_active')
+  if(img){
+    img.classList.add('_active')
+
+  }
   left.forEach((el) => {
     el.classList.add('js_fade_active')
     el.style.transition = '1.5s';
@@ -23,43 +26,45 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 window.addEventListener('DOMContentLoaded', function () {
-  var home = document.getElementById('home')||null;
-  var non = document.getElementById('non')||null;
-  var none = document.getElementById('none')||null;
-  var back = document.getElementById('back')||null;
-  var btnN = document.getElementById('btn_none')||null;
-  var btnD = document.getElementById('btn_del')||null;
-  var btn_non = document.getElementById('btn_non')||null;
-  var form=document.querySelector('.left_form')||null;
-  var left=document.querySelector('.left_side')||null;
-  var formB=document.querySelector('.form_box')||null;
-  home.addEventListener('click', function () {
-    back.classList.add('active');
-    btnN.classList.remove('active');
-    btnD.classList.remove('active');
-  })
-  non.addEventListener('click', () => {
-    back.classList.remove('active');
-    btnN.classList.remove('active');
-    btn_non.classList.remove('active');
-    btnD.classList.remove('active');
-    document.location.reload();
-  })
-  none.addEventListener('click', () => {
-    btnN.classList.add('active');
-    btnD.classList.add('active');
-    btn_non.classList.add('active');
-  })
-  btnN.addEventListener('click',(evt)=> {
-    const clickCount = evt.target.dataset.clicks = ~~evt.target.dataset.clicks + 1;
-    if (clickCount < 3){
-      let clone=form.cloneNode(true)
-      form.after(clone)
-    }
-    else {
-      alert('Слишком много поездок:)')
-    }
-  })
+  let home = document.getElementById('home')||null;
+  let non = document.getElementById('non')||null;
+  let none = document.getElementById('none')||null;
+  let back = document.getElementById('back')||null;
+  let btnN = document.getElementById('btn_none')||null;
+  let btnD = document.getElementById('btn_del')||null;
+  let btn_non = document.getElementById('btn_non')||null;
+  let form=document.querySelector('.left_form')||null;
+  let left=document.querySelector('.left_side')||null;
+  let formB=document.querySelector('.form_box')||null;
+  if(home){
+    home.addEventListener('click', function () {
+      back.classList.add('active');
+      btnN.classList.remove('active');
+      btnD.classList.remove('active');
+    })
+    non.addEventListener('click', () => {
+      back.classList.remove('active');
+      btnN.classList.remove('active');
+      btn_non.classList.remove('active');
+      btnD.classList.remove('active');
+      document.location.reload();
+    })
+    none.addEventListener('click', () => {
+      btnN.classList.add('active');
+      btnD.classList.add('active');
+      btn_non.classList.add('active');
+    })
+    btnN.addEventListener('click',(evt)=> {
+      const clickCount = evt.target.dataset.clicks = ~~evt.target.dataset.clicks + 1;
+      if (clickCount < 3){
+        let clone=form.cloneNode(true)
+        form.after(clone)
+      }
+      else {
+        alert('Слишком много поездок:)')
+      }
+    })
+  }
   btnD.addEventListener('click',(event)=> {
     const clickCount=event.target.dataset.clicks=~~event.target.dataset.clicks+1;
     formB.lastChild.remove()
@@ -74,13 +79,15 @@ window.addEventListener('DOMContentLoaded', function () {
 const av1=document.getElementById('av1')||null;
 const av2=document.getElementById('av2')||null;
 const ell=document.getElementById('Ellipse')||null;
-console.log(ell);
-av1.addEventListener('mouseover',()=> {
-  ell.classList.add('active_av')
-})
-av1.addEventListener('mouseover',()=> {
-  av2.classList.add('active_av')
-})
+if(av1){
+  av1.addEventListener('mouseover',()=> {
+    ell.classList.add('active_av')
+  })
+  av1.addEventListener('mouseover',()=> {
+    av2.classList.add('active_av')
+  })
+
+}
 /* ,..,..,..,..,..,Слайдер СвайперJS..,..,..,..,..,.., */
 var sliderSelector1 = document.querySelector(".mySwiper") || null;
 var sliderSelector2 = document.querySelector(".mySwiper2") || null;
