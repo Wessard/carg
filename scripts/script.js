@@ -64,14 +64,14 @@ window.addEventListener('DOMContentLoaded', function () {
         alert('Слишком много поездок:)')
       }
     })
+    btnD.addEventListener('click',(event)=> {
+      const clickCount=event.target.dataset.clicks=~~event.target.dataset.clicks+1;
+      formB.lastChild.remove()
+      if(clickCount>2){
+        btnD.setAttribute('disabled','true')
+      }
+    })
   }
-  btnD.addEventListener('click',(event)=> {
-    const clickCount=event.target.dataset.clicks=~~event.target.dataset.clicks+1;
-    formB.lastChild.remove()
-    if(clickCount>2){
-      btnD.setAttribute('disabled','true')
-    }
-  })
 })
 
 
