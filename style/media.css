@@ -773,6 +773,12 @@
     .form_btn-wrap{
         flex-direction: column;
     }
+    .logo_img {
+        display: none;
+    }
+    .add{
+        margin-bottom: 0;
+    }
 
 }
 @media(max-width:340px){

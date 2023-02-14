@@ -21,40 +21,40 @@ document.querySelectorAll('.dropdown-toggle').forEach((el) => {
     });
   })
 })
-let close=$('.close_btn');
-let menuw=$('.menu_wrap');
-let menu=$('.menu_burger');
-let menyus=document.querySelectorAll('.dropdown-menu');
-let ddTogle=document.querySelectorAll('.dropdown-toggle');
-$(document).mouseup(function(e){
-  if(!close.is(e.target)&&close.has(e.target).length===0&&
-  !menuw.is(e.target)&&menuw.has(e.target).length===0
-  ){
-    let closeb=document.querySelector('.close_btn')
-    if(closeb.classList.contains('active')){
-    menyus.forEach((el)=> {
-    el.classList.remove('menu_active')||
-    ddTogle.forEach((el)=> {
-    el.classList.remove('active_st')
-    })
-    })
-  }
+let close = $('.close_btn');
+let menuw = $('.menu_wrap');
+let menu = $('.menu_burger');
+let menyus = document.querySelectorAll('.dropdown-menu');
+let ddTogle = document.querySelectorAll('.dropdown-toggle');
+$(document).mouseup(function (e) {
+  if (!close.is(e.target) && close.has(e.target).length === 0 &&
+    !menuw.is(e.target) && menuw.has(e.target).length === 0
+  ) {
+    let closeb = document.querySelector('.close_btn')
+    if (closeb.classList.contains('active')) {
+      menyus.forEach((el) => {
+        el.classList.remove('menu_active') ||
+          ddTogle.forEach((el) => {
+            el.classList.remove('active_st')
+          })
+      })
+    }
     menuw.removeClass('active');
     menu.removeClass('active');
   }
 })
 document.addEventListener('DOMContentLoaded', function () {
   $('.menu_burger,.close_btn' || null).click(function (event) {
-  $('.menu_burger,.menu_wrap,.close_btn' || null).toggleClass('active')
-  let closeb=document.querySelector('.close_btn')
-  if(closeb.classList.contains('active')){
-    menyus.forEach((el)=> {
-    el.classList.remove('menu_active')||
-    ddTogle.forEach((el)=> {
-      el.classList.remove('active_st')
-    })
-    })
-  }
+    $('.menu_burger,.menu_wrap,.close_btn' || null).toggleClass('active')
+    let closeb = document.querySelector('.close_btn')
+    if (closeb.classList.contains('active')) {
+      menyus.forEach((el) => {
+        el.classList.remove('menu_active') ||
+          ddTogle.forEach((el) => {
+            el.classList.remove('active_st')
+          })
+      })
+    }
   })
 
   $('.carg_opa' || null).addClass('_active')
@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', function () {
   let btnD = document.getElementById('btn_del') || null;
   let btn_non = document.getElementById('btn_non') || null;
   let form = document.querySelector('.left_form') || null;
-  let left = document.querySelector('.left_side') || null;
+  // let left = document.querySelector('.left_side') || null;
   let formB = document.querySelector('.form_box') || null;
   if (home) {
     home.addEventListener('click', function () {
