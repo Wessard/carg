@@ -107,7 +107,7 @@ input[type=search] {
   font-size: 20px;
   line-height: 24px;
   color: rgb(49, 60, 78);
-  font-family: "TTHoves-Regular";
+  font-family: "Inter-Regular";
 }
 
 input::-webkit-search-decoration,
@@ -1554,4 +1554,30 @@ input[type=text] {
 
 .dropdown-item:hover {
   color: #212529;
+}
+
+.animated-show {
+  opacity: 1;
+}
+
+.animated-show.animated-show-active {
+  transition: opacity 2s ease-out;
+  animation-name: animate;
+  animation-duration: 1.3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-300px, 0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-1500px, 0);
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -21,6 +21,7 @@ document.querySelectorAll('.dropdown-toggle').forEach((el) => {
     });
   })
 })
+
 let close = $('.close_btn');
 let menuw = $('.menu_wrap');
 let menu = $('.menu_burger');
@@ -33,7 +34,8 @@ $(document).mouseup(function (e) {
     let closeb = document.querySelector('.close_btn')
     if (closeb.classList.contains('active')) {
       menyus.forEach((el) => {
-        el.classList.remove('menu_active') ||
+        el.classList.remove('menu_active')
+        el.classList.remove('open')
           ddTogle.forEach((el) => {
             el.classList.remove('active_st')
           })
@@ -49,9 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
     let closeb = document.querySelector('.close_btn')
     if (closeb.classList.contains('active')) {
       menyus.forEach((el) => {
-        el.classList.remove('menu_active') ||
+        el.classList.remove('menu_active')
+        el.classList.remove('open')
           ddTogle.forEach((el) => {
-            el.classList.remove('active_st')
+        el.classList.remove('active_st')
           })
       })
     }
@@ -141,7 +144,9 @@ if (av1) {
     av2.classList.add('active_av')
   })
 
-}
+} 
+
+
 /* ,..,..,..,..,..,Слайдер СвайперJS..,..,..,..,..,.., */
 var sliderSelector1 = document.querySelector(".mySwiper") || null;
 var sliderSelector2 = document.querySelector(".mySwiper2") || null;
@@ -154,7 +159,11 @@ var swiper = new Swiper(sliderSelector1, {
   freeMode: true,
   allowTouchMove: false,
   watchSlidesProgress: false,
-  speed: 600,
+  speed: 800,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
 });
 var swiper2 = new Swiper(sliderSelector2, {
   spaceBetween: 40,
@@ -221,3 +230,22 @@ var mySwiper6 = new Swiper(sliderSelector6, {
     el: '.swiper-scrollbar',
   },
 });
+
+window.onload = function() {
+  var body = document.querySelector('body');
+  var links = document.querySelectorAll('a');  
+  
+  links.forEach(function (link) {
+    link.addEventListener('click', onLinkClicked);
+    
+    function onLinkClicked(event) {
+      event.preventDefault();
+      body.classList.add('animated-show-active')
+      setTimeout(onAnimationComplete, 800);
+    }
+
+    function onAnimationComplete() {
+      window.location = link.href;  
+    }
+  });
+}

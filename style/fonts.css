@@ -19,31 +19,6 @@
     font-weight: 600;
 }
 @font-face{
-    font-family: 'Montserrat-Bold';
-    src: url(../fonts/Montserrat-Bold.ttf);
-    font-weight: bold;
-}
-@font-face{
-    font-family: 'Montserrat-Medium';
-    src: url(../fonts/Montserrat-Medium.ttf);
-    font-weight: 500;
-}
-@font-face{
-    font-family: 'Montserrat-Regular';
-    src: url(../fonts/Montserrat-Regular.ttf);
-    font-weight: 400;
-}
-@font-face{
-    font-family: 'TTHoves-Light';
-    src: url(../fonts/TTHoves-Light.ttf);
-    font-weight: 300;
-}
-@font-face{
-    font-family: 'TTHoves-Regular';
-    src: url(../fonts/TTHoves-Regular.ttf);
-    font-weight: 400;
-}
-@font-face{
     font-family: 'Inter-Regular';
     src: url(../fonts/Inter-Regular.ttf);
     font-weight: 400;
