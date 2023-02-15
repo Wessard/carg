@@ -527,26 +527,15 @@ input::-webkit-search-results-decoration { display: none; }
   top: -50px;
   z-index: -2;
   right: -149px;
-  transform: translate(2500px);
-  visibility: hidden;
-  transition: 2s;
 }
 
-.av2.active_av {
-  transform: translate(0,0);
-  visibility: visible;
-}
 .Ellipse{
   position: absolute;
   top: 380px;
   right: 0;
-  transform: translate(0,2500px);
   transition: .8s;
 }
-.Ellipse.active_av {
-  transform: translate(0,0);
-  visibility: visible;
-}
+
 .left_desc {
   width: 653px;
 }

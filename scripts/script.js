@@ -133,18 +133,18 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-const av1 = document.getElementById('av1') || null;
-const av2 = document.getElementById('av2') || null;
-const ell = document.getElementById('Ellipse') || null;
-if (av1) {
-  av1.addEventListener('mouseover', () => {
-    ell.classList.add('active_av')
-  })
-  av1.addEventListener('mouseover', () => {
-    av2.classList.add('active_av')
-  })
+// const av1 = document.getElementById('av1') || null;
+// const av2 = document.getElementById('av2') || null;
+// const ell = document.getElementById('Ellipse') || null;
+// if (av1) {
+//   av1.addEventListener('mouseover', () => {
+//     ell.classList.add('active_av')
+//   })
+//   av1.addEventListener('mouseover', () => {
+//     av2.classList.add('active_av')
+//   })
 
-} 
+// } 
 
 
 /* ,..,..,..,..,..,Слайдер СвайперJS..,..,..,..,..,.., */
