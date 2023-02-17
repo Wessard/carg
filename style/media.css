@@ -13,7 +13,7 @@
 @media(min-width:1600px){
     .jet_img{
         position: absolute;
-        left: 200px;
+        left: 350px;
         top: -100px;
     }
 }
@@ -22,7 +22,7 @@
         top: 0;
         right: 0;
         width: 65vw;
-        left: 18%;
+        left: -48px;
     }
     .fl_vim {
         top: 0;
