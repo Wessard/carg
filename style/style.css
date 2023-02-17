@@ -225,6 +225,33 @@ input::-webkit-search-results-decoration {
   right: 0;
 }
 
+/* AVIA */
+.avia_bg {
+  background-image: url(../assets/city.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.truck {
+  position: absolute;
+  top: 200px;
+}
+
+.cargo {
+  position: absolute;
+  top: 20px;
+}
+
+.ellipse_carg {
+  position: absolute;
+  left: 0;
+}
+
+.test {
+  position: relative;
+}
+
 .busavia {
   position: absolute;
   top: 0px;
@@ -421,6 +448,7 @@ input::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: visible;
 }
 
 .mn_pg {
@@ -451,6 +479,7 @@ input::-webkit-search-results-decoration {
 .carg_opa {
   transform: translate(2000px);
   transition: all 1.3s;
+  height: 100%;
 }
 
 .carg_opa._active {
@@ -481,6 +510,42 @@ input::-webkit-search-results-decoration {
 .jet_wrap._active {
   transform: translate(0);
   visibility: visible;
+}
+
+.extra_img {
+  position: relative;
+  right: -29px;
+}
+
+.ex_wrap {
+  position: unset;
+}
+
+.med_bg {
+  background-image: url(../assets/med-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fl_img {
+  position: absolute;
+  top: 90px;
+  right: -195px;
+}
+
+.fl_bg_fil {
+  position: absolute;
+  right: -300px;
+  top: 300px;
+}
+
+.fl_bg_fil_other {
+  top: 260px;
+}
+
+.ex_img {
+  top: 150px;
 }
 
 /* PAGE ABOUT */
@@ -563,7 +628,6 @@ input::-webkit-search-results-decoration {
 .img_media {
   position: absolute;
   right: 0;
-  top: -140px;
 }
 
 .av1 {
@@ -578,9 +642,9 @@ input::-webkit-search-results-decoration {
 .av2 {
   position: absolute;
   bottom: 0;
-  top: -50px;
   z-index: -2;
-  right: -149px;
+  right: 0px;
+  width: 40vw;
 }
 
 .Ellipse {
@@ -662,15 +726,15 @@ input::-webkit-search-results-decoration {
 
 .swiper-button-prev {
   position: absolute;
-  left: 45%;
-  top: 400px;
+  left: 48%;
+  top: 53%;
   transform: rotate(180deg);
   width: 47px;
 }
 
 .swiper-button-next {
   position: absolute;
-  top: 400px;
+  top: 53%;
   right: 70px;
   width: 47px;
 }
@@ -688,6 +752,17 @@ input::-webkit-search-results-decoration {
 
 .sw_next svg {
   right: 10px;
+}
+
+.carg_anim {
+  position: absolute;
+  top: 120px;
+}
+
+.carg_anima {
+  position: absolute;
+  top: 150px;
+  left: 100px;
 }
 
 /* TABLE _WRAP */
@@ -1005,8 +1080,9 @@ input[type=text] {
 }
 
 .palete_img {
-  position: relative;
+  position: absolute;
   right: 150px;
+  top: 200px;
 }
 
 .taxi_wrap {
@@ -1278,6 +1354,10 @@ input[type=text] {
   margin: auto;
   height: 100px;
   position: relative;
+  background-image: url(../assets/angar-scheme.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hg_ma_im {
@@ -1500,7 +1580,7 @@ input[type=text] {
   color: #00AFEF;
 }
 
-.btn {
+.burger_list li a {
   display: inline-block;
   color: #fff;
   font-family: "Gilroy-Regular";
@@ -1526,21 +1606,6 @@ input[type=text] {
   position: relative;
   visibility: visible;
   width: 265px;
-}
-
-.dropdown-item {
-  color: #fff;
-  font-family: "Gilroy-Light";
-  font-size: 14px;
-  letter-spacing: 2px;
-  padding-bottom: 15px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.7s;
-}
-
-.dropdown-item:hover {
-  color: #212529;
 }
 
 .animated-show {
