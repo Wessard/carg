@@ -18,6 +18,7 @@
     }
 }
 @media(max-width:1600px){
+    
     .ept_wrap_bx {
         grid-template-columns: repeat(2,1fr);
     }
@@ -197,9 +198,10 @@
     }
     .jet_img {
         position: relative;
-        height: 100vh;
+        /* height: 100vh; */
         width: 50vw;
-        top: 180px;
+        /* top: 180px; */
+        left: 40px;
     }
     .main_wrap{
         margin: 0 40px;
@@ -312,7 +314,7 @@
         width: 80vw;
     }
     .img_bg{
-        width: 80vw;
+        width: 100vw;
     }
     .tab_wrap {
         flex-wrap: wrap;
@@ -620,6 +622,9 @@
     }
 }
 @media(max-width:764px){
+    .btn_all {
+        font-size: 0.5rem;
+    }
     .left_sp {
         font-size: 3.5vw;
     }
@@ -653,10 +658,11 @@
         width: 70vw;
     }
     .jet_img{
-        margin-top: 0 !important; 
+        margin-top: 0 !important;
         top: 0;
-        width: 100vw;
-        height: 55vh;
+        width: 70vw;
+        left: 0;
+        /* height: 55vh; */
     }
     .jet_form input[type=text], .jet_form input[type=number], .jet_form input[type=email], .jet_form input[type=tel] {
         font-size: 3.5vw;
@@ -768,6 +774,9 @@
     }
     .vip_btn {
         margin-bottom: 50px;
+    }
+    .jet_tip {
+        font-size: 2.5vw;
     }
 }
 @media(max-width:600px){
@@ -895,16 +904,16 @@
         height: 5px;
     }
     .swiper-button-next {
-        top: 180px;
+        top: 220px;
         right: 0;
         width: 35px;
-        position: fixed !important;
+        position: absolute !important;
      }
      .swiper-button-prev{
-        top: 180px;
+        top: 220px;
         left: 0;
         width: 35px;
-        position: fixed !important;
+        position: absolute !important;
      }
      .extra_prev {
         left: 0px;

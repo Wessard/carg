@@ -1850,4 +1850,23 @@ input[type=text] {
 .pc_btn:hover {
   background-color: #302F2F;
   color: #fff;
+}
+
+.btn_all {
+  margin-top: 29px;
+  padding: 18px 30px;
+  text-align: center;
+  background-color: #00AFEF;
+  border-radius: 9px;
+  color: #fff;
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  line-height: 24px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn_all:hover {
+  background-color: #302F2F;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

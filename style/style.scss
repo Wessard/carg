@@ -1687,3 +1687,20 @@ fill: #000;
   background-color: #302F2F;
   color: #fff;
 }
+.btn_all{
+  margin-top: 29px;
+  padding: 18px 30px;
+  text-align: center;
+  background-color: #00AFEF;
+  border-radius: 9px;
+  color: #fff;
+  font-family: $girMed;
+  font-size: 20px;
+  line-height: 24px;
+  transition: .5s;
+  cursor: pointer;
+}
+.btn_all:hover {
+  background-color: #302F2F;
+  color: #fff;
+}
