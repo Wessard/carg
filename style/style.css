@@ -13,11 +13,6 @@
   outline: none !important;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -496,7 +491,6 @@ input::-webkit-search-results-decoration {
   transition: all 1.3s;
   visibility: hidden;
   position: relative;
-  background: url();
 }
 
 .ab_gr._active {
@@ -1714,11 +1708,6 @@ input[type=text] {
 }
 
 /* VIP-Tours */
-.cont {
-  width: 100%;
-  height: 100vh;
-}
-
 .vip_btn {
   margin-bottom: 291px;
 }
@@ -1731,6 +1720,9 @@ input[type=text] {
   transform: translate(2000px);
   transition: all 1.3s;
   visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .vip_img._active {
