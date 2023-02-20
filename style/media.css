@@ -267,12 +267,12 @@
         top: 25%;
     }
     .swiper-button-next {
-        top: 45%;
+        top: 100%;
         right: 70px;
         width: 70px;
      }
      .swiper-button-prev{
-        top: 45%;
+        top: 100%;
         left: 70px;
         width: 70px;
      }
@@ -513,12 +513,12 @@
         display: none;
     }
     .swiper-button-next {
-        top: 40%;
+        top: 100%;
         width: 50px;
      }
      .swiper-button-prev{
         width: 50px;
-        top: 40%;
+        top: 100%;
      }
      .span_line,
      .span_th {
@@ -738,12 +738,12 @@
         margin-top: 21px;
     }
     .swiper-button-next {
-        top: 46%;
+        top: 100%;
         width: 35px;
         right: 30px;
      }
      .swiper-button-prev{
-        top: 46%;
+        top: 100%;
          width: 35px;
          left: 30px;
     }
@@ -923,13 +923,13 @@
         height: 5px;
     }
     .swiper-button-next {
-        top: 50%;
+        top: 100%;
         right: 0;
         width: 35px;
         position: absolute !important;
      }
      .swiper-button-prev{
-        top: 50%;
+        top: 100%;
         left: 0;
         width: 35px;
         position: absolute !important;
@@ -1047,13 +1047,13 @@
         margin-bottom: 0;
     }
     .swiper-button-next {
-        top: 35%;
+        top: 65%;
         right: 0;
         width: 35px;
         position: absolute !important;
      }
      .swiper-button-prev{
-        top: 35%;
+        top: 65%;
         left: 0;
         width: 35px;
         position: absolute !important;
@@ -1073,13 +1073,13 @@
         width: 25px;
     }
     .swiper-button-next {
-        top: 29%;
+        top: 55%;
         right: 0;
         width: 35px;
         position: absolute !important;
     }
      .swiper-button-prev{
-        top: 29%;
+        top: 55%;
         left: 0;
         width: 35px;
         position: absolute !important;
