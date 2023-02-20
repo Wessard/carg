@@ -53,8 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
       menyus.forEach((el) => {
         el.classList.remove('menu_active')
         el.classList.remove('open')
-        alert('privet')
-          ddTogle.forEach((el) => {
+      ddTogle.forEach((el) => {
         el.classList.remove('active_st')
           })
       })

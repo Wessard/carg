@@ -944,13 +944,14 @@
         margin-top: 0.5rem;
     }
     .table_wrap-btn {
-        padding: 0.5rem;
+        height:max-content;
         text-align: center;
         margin-top: 0.5rem;
     }
     .table_last-btn{
-        font-size: 4.5vw;
-        padding: 0.5rem;
+        font-size: 15px;
+        height: max-content;
+        width: 70%;
     }
     .av2 {
         top: -45px;
@@ -994,6 +995,10 @@
     .empty_leg-tip{
         color: 
         #313C4E;
+    }
+    .vip_btn {
+        width: 250px;
+        font-size: 12px;
     }
     .vip_tt {
         color: 
