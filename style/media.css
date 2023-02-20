@@ -20,9 +20,7 @@
 @media(max-width:1600px){
     .vip_text {
         color: blanchedalmond;
-    }
-    .vip_b {
-        color: white;
+        z-index: 10;
     }
     .vip_tt {
         color: blanchedalmond;
@@ -41,6 +39,12 @@
         right: 0;
         background: linear-gradient(to right, transparent 0%,  rgba(0, 0, 0, 0.9) 100%);
         z-index: -2;
+    }
+    .vip_imm {
+        z-index: 10;
+    }
+    .vip_btn {
+        z-index: 10;
     }
     .palete_img{
         position: absolute;
