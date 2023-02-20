@@ -18,9 +18,29 @@
     }
 }
 @media(max-width:1600px){
+    .vip_text {
+        color: blanchedalmond;
+    }
+    .vip_b {
+        color: white;
+    }
+    .vip_tt {
+        color: blanchedalmond;
+    }
     .vip_img {
         width: 100vw;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0.56));
+        position: relative;
+        z-index: -2;
+    }
+    .vip_img::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(to right, transparent 0%,  rgba(0, 0, 0, 0.9) 100%);
+        z-index: -2;
     }
     .palete_img{
         position: absolute;
@@ -511,8 +531,14 @@
         width: 70vw;
         left: 0;
     }
+    .vip_btn {
+        margin-bottom: 120px;
+    }
 }
 @media(max-width:816px){
+    .vip_btn {
+        margin-bottom: 80px;
+    }
     .empty_form-submit {
         font-size: 4vw;
     } 
@@ -729,8 +755,14 @@
     .fl_img {
         margin-right: 0;
     }
+    .vip_btn {
+        margin-bottom: 50px;
+    }
 }
 @media(max-width:600px){
+    .vip_btn {
+        margin-bottom: 20px;
+    }
     .left_choice {
         display: flex;
         justify-content: space-between;
