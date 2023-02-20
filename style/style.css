@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../style/fonts.css);
 /*???? RESET STYLESHEET ?????*/
 *,
@@ -233,23 +234,21 @@ input::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 
-.truck {
-  position: absolute;
-  top: 200px;
-}
-
-.cargo {
-  position: absolute;
-  top: 20px;
-}
-
 .ellipse_carg {
   position: absolute;
   left: 0;
+  opacity: 0.3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: rotate(-85.1deg);
 }
 
 .test {
   position: relative;
+  right: -60px;
+}
+
+.av_bg {
+  height: 150vh;
 }
 
 .busavia {
@@ -512,12 +511,6 @@ input::-webkit-search-results-decoration {
   visibility: visible;
 }
 
-.extra_img {
-  position: relative;
-  right: -200px;
-  bottom: -400px;
-}
-
 .ex_wrap {
   position: unset;
 }
@@ -527,26 +520,50 @@ input::-webkit-search-results-decoration {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 110vh;
 }
 
 .fl_img {
   position: absolute;
-  top: 90px;
+  top: 300px;
   right: -195px;
+}
+
+.fl_vim {
+  top: 90px;
 }
 
 .fl_bg_fil {
   position: absolute;
   right: -300px;
   top: 300px;
+  background: rgba(217, 217, 217, 0.35);
 }
 
 .fl_bg_fil_other {
   top: 260px;
+  z-index: -2;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+}
+
+.extra_img {
+  position: absolute;
+  right: -200px;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+  z-index: -2;
 }
 
 .ex_img {
   top: 150px;
+  position: relative;
+  right: 50px;
+}
+
+.man_im {
+  position: relative;
+  top: 30px;
 }
 
 /* PAGE ABOUT */
@@ -621,9 +638,9 @@ input::-webkit-search-results-decoration {
 }
 
 .right_side {
-  position: relative;
   right: -100px;
   top: -100px;
+  position: relative;
 }
 
 .img_media {
@@ -632,10 +649,10 @@ input::-webkit-search-results-decoration {
 }
 
 .av1 {
-  width: 772px;
+  width: 955px;
   height: 330px;
-  right: -120px;
-  top: 60px;
+  right: -100px;
+  top: 50px;
   position: absolute;
   z-index: -2;
 }
@@ -644,19 +661,34 @@ input::-webkit-search-results-decoration {
   position: absolute;
   bottom: 0;
   z-index: -2;
-  right: 0px;
+  right: 130px;
   width: 40vw;
 }
 
 .Ellipse {
   position: absolute;
-  top: 380px;
-  right: 0;
-  transition: 0.8s;
+  top: 170px;
+  right: -25px;
+  z-index: -2;
 }
 
 .left_desc {
   width: 653px;
+}
+
+.cargg_span {
+  font-family: "Gilroy-Semibold";
+  font-size: 96px;
+  line-height: 118px;
+  color: rgba(49, 60, 78, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: rotate(270deg);
+  position: fixed;
+  right: -550px;
+  z-index: 2;
+  top: 400px;
 }
 
 .right_span p {
@@ -667,10 +699,10 @@ input::-webkit-search-results-decoration {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  transform: rotate(90deg);
+  transform: rotate(270deg);
   position: fixed;
   right: -345px;
-  top: 50%;
+  top: 45%;
 }
 
 /* CARGO SWIPER */
@@ -708,6 +740,10 @@ input::-webkit-search-results-decoration {
   display: inline-block;
 }
 
+.car_mb {
+  margin-bottom: 184px;
+}
+
 .av_bn {
   margin-top: 41px;
   width: 380px;
@@ -728,15 +764,15 @@ input::-webkit-search-results-decoration {
 .swiper-button-prev {
   position: absolute;
   left: 48%;
-  top: 53%;
+  top: 40%;
   transform: rotate(180deg);
   width: 47px;
 }
 
 .swiper-button-next {
   position: absolute;
-  top: 53%;
-  right: 70px;
+  top: 40%;
+  right: 100px;
   width: 47px;
 }
 
@@ -837,6 +873,7 @@ input[type=text] {
   font-family: "Inter-Regular";
   font-size: 15px;
   line-height: 19px;
+  margin-right: 2px;
 }
 
 .left_form-input:focus {
@@ -872,19 +909,20 @@ input[type=text] {
   color: rgba(0, 0, 0, 0.91);
   transition: 0.5s;
   cursor: pointer;
+  opacity: 0.7;
 }
 .left_choice-btn:hover {
-  color: #00AFEF;
+  opacity: 1;
 }
 
 .left_form {
   margin-top: 24px;
   grid-gap: 2px;
-  display: grid;
-  grid-template-columns: repeat(6, 205px);
+  display: flex;
 }
 .left_form-input {
   padding: 26px 18px 25px 15px;
+  margin-right: 2px;
 }
 .left_form input[type=submit] {
   background: #00AFEF;
@@ -933,27 +971,47 @@ input[type=text] {
   transition: 1.5s;
 }
 
+.form_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.for_bx {
+  display: flex;
+  align-items: center;
+}
+
 .form_btn-wrap {
   display: flex;
   justify-content: space-between;
 }
 
 #btn_none {
-  display: none;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+  transform: translate(0, 200px);
 }
 
 #btn_none.active {
-  display: block;
+  opacity: 1;
   grid-column: 5;
+  visibility: visible;
+  transform: translate(0, 0);
 }
 
 #btn_del {
-  display: none;
+  visibility: hidden;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translate(0, 200px);
 }
 
 #btn_del.active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
   grid-column: 5;
+  transform: translate(0, 0);
 }
 
 .btn_non_inp {
@@ -967,6 +1025,8 @@ input[type=text] {
   cursor: pointer;
   transition: 0.5s;
   padding: 26px 18px 25px 15px;
+  width: 200px;
+  margin-right: 5px;
 }
 
 .btn_non_inp:hover {
@@ -1026,7 +1086,7 @@ input[type=text] {
 
 .jet_right {
   top: 0;
-  right: 60px;
+  right: 50px;
 }
 
 .jet_form-submit {
@@ -1146,6 +1206,11 @@ input[type=text] {
   margin-top: 48px;
 }
 
+.empty_form-submit:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .empty_form-input {
   padding: 18px 18px 17px 27px;
 }
@@ -1204,13 +1269,6 @@ input[type=text] {
 }
 
 /* ?????????????????????????????????????????HANGAR?????????????????????????????????? */
-.hang_bg {
-  background: url(../assets/hamburg.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
 .hangar_desc {
   margin-bottom: 120px;
 }
@@ -1236,7 +1294,6 @@ input[type=text] {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding-bottom: 205px;
   margin-top: 30px;
 }
 
@@ -1360,28 +1417,12 @@ input[type=text] {
   width: 100%;
 }
 
-.te {
-  max-width: var(--cont);
-  margin: auto;
-  height: 100px;
-  position: relative;
-  background-image: url(../assets/angar-scheme.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .hg_ma_im {
-  background-image: url(../assets/angar-scheme.png);
+  background-image: url(../assets/Ангар.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.hang_bg {
-  background-image: url(../assets/hamburg-png.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
 /* ?????????????????/////////////////???????????????????SW WRAP////////////??????????????????????????/////////////////////////// */
@@ -1437,6 +1478,13 @@ input[type=text] {
 }
 
 /* ?????????AIR CATALOG STYLES?????????? */
+.air_cat_l_bg {
+  background: url(../assets/mountain_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .air_cat_l {
   width: 958px;
 }
@@ -1643,4 +1691,44 @@ input[type=text] {
     transform: translate(-1500px, 0);
     opacity: 0;
   }
+}
+.r_sd_mm {
+  position: unset;
+}
+
+.truck {
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+
+.cargo {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+}
+
+/* VIP-Tours */
+.cont {
+  width: 100%;
+  height: 100vh;
+}
+
+.vip_btn {
+  margin-bottom: 291px;
+}
+
+.vip_img {
+  background-image: url(../assets/vip-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(2000px);
+  transition: all 1.3s;
+  visibility: hidden;
+}
+
+.vip_img._active {
+  transform: translate(0);
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */

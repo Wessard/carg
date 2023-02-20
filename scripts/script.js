@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.carg_opa' || null).addClass('_active')
   $('.main_gr' || null).addClass('_active')
   $('.ab_gr' || null).addClass('_active')
+  $('.vip_img'||null).addClass('_active')
   $('.jet_wrap' || null).addClass('_active')
   $('.avia_gr' || null).addClass('_active')
   let img = document.querySelector('.img_bg') || null;
@@ -122,7 +123,7 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     })
     btnD.addEventListener('click', (event) => {
-      const clickCount = event.target.dataset.clicks = ~~event.target.dataset.clicks + 1;
+      const clickCount = event.target.dataset.clicks=~~event.target.dataset.clicks+1;
       formB.lastChild.remove()
       if (clickCount > 2) {
         btnD.setAttribute('disabled', 'true')
@@ -130,21 +131,6 @@ window.addEventListener('DOMContentLoaded', function () {
     })
   }
 })
-
-
-
-// const av1 = document.getElementById('av1') || null;
-// const av2 = document.getElementById('av2') || null;
-// const ell = document.getElementById('Ellipse') || null;
-// if (av1) {
-//   av1.addEventListener('mouseover', () => {
-//     ell.classList.add('active_av')
-//   })
-//   av1.addEventListener('mouseover', () => {
-//     av2.classList.add('active_av')
-//   })
-
-// } 
 
 
 /* ,..,..,..,..,..,Слайдер СвайперJS..,..,..,..,..,.., */
@@ -159,7 +145,7 @@ var swiper = new Swiper(sliderSelector1, {
   freeMode: true,
   allowTouchMove: false,
   watchSlidesProgress: false,
-  speed: 800,
+  speed: 500,
   effect: 'fade',
   fadeEffect: {
     crossFade: true

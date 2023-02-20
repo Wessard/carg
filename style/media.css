@@ -18,14 +18,51 @@
     }
 }
 @media(max-width:1600px){
+    .vip_img {
+        width: 100vw;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0.56));
+    }
+    .palete_img{
+        position: absolute;
+        left: 135px;
+        top: 60px;
+    }
+    .right_side_img {
+        position: relative;
+        left: 22%;
+    }
+    .extra_img {
+        position: absolute;
+        left: 25%;
+    }
+    .form_btn-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .for_bx {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .car_mb {
+        margin-bottom: 30px;
+    }
+    .avia_btn {
+        margin-bottom: 50px;
+    }
     .fl_img {
         top: 0;
         right: 0;
-        width: 65vw;
+        width: 40vw;
         left: -48px;
     }
     .fl_vim {
         top: 0;
+        left: 0;
+    }
+    .ex_img {
+        left: 0%;
     }
     .jet_form-submit{
         margin-bottom: 40px;
@@ -144,17 +181,18 @@
         top: 0;
     }
      .swiper-button-next {
-        top: 35%;
+        top: 20%;
         right: 30px;
      }
      .swiper-button-prev{
-        top: 35%;
+        top: 20%;
         left: 30px;
      }
      .test {
         display: flex;
         justify-content: center;
         margin-top: 60px;
+        right: 0;
      }
      .main_gr {
         display: flex;
@@ -169,7 +207,6 @@
      .taxi_jet {
         right: 0;
         top: 10px;
-        /* right: 10vw; */
      }
      .left_tip{
         text-align: center;
@@ -205,9 +242,14 @@
     .left_sp {
         font-size: 2.5vw;
     }
+    .ab_prev,.ab_next{
+        top: 25%;
+    }
     }
 @media(max-width:1400px){
-    
+    .form_box {
+        margin-bottom: 30px;
+    }
     .close_btn.active{
         width: 3.5vw;
         height: 3.5vw;
@@ -286,10 +328,54 @@
     .m_mt_vh{
         margin-top: 80vh;
     }
+    .btn_non_inp {
+        margin-right: 0;
+    }
 }
 @media(max-width:1100px){
+    .ab_prev{
+        top: 10%;
+    }
+    .ab_next{
+        top: 10%;
+    }
+    .carg_anim,.carg_anima {
+        width: 80vw;
+    }
+    .cargo,.truck{
+        width: 80vw;
+    }
+    .palete_img{
+        left: -260px;
+        top: 95px;
+        width: 80vw;
+    }
+    .ellipse-carg {
+        display: none;
+    }
+    .palete_img {
+        position: unset;
+        top: 0;
+        height: 70vh;
+    }
+    .fl_bg_fil_other {
+        display: none;
+    }
+    .fl_vim {
+        left: 10%;
+    }
+    .extra_img{
+        opacity: 0;
+    }
+    .form_btn-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
     .left_sp {
         font-size: 3.5vw;
+    }
+    .form_box {
+        width: 200px;
     }
     .swiper-bt-prev{
         position: absolute;
@@ -304,11 +390,9 @@
         width: 3.5vw;
     }
     #btn_none {
-        margin-left: 1rem;
         margin-top: 1rem;
     }
-    #btn_non {
-        margin-left: 1rem;
+    #btn_del {
         margin-top: 1rem;
     }
     .close_btn.active{
@@ -341,13 +425,12 @@
         width: 70vw;
     }
     input[type="text"]{
-        font-size: 3.5vw;
+        /* font-size: 3.5vw; */
+        width: 200px;
     }
     input[type="date"]{
-        font-size: 3.5vw;
-    }
-    input[type="submit"]{
-        font-size: 2.5vw;
+        /* font-size: 3.5vw; */
+        width: 200px;
     }
 
     .left_form{
@@ -372,6 +455,7 @@
       }
     .cargo {
         margin-top: 40px;
+        right: 0;
     }
     .right_side_img {
         width: 80vw;
@@ -406,19 +490,39 @@
         top: 0;
     }
     .truck {
-        width: 60vw;
         top: 25%;
+    }
+    .cargo {
+        display: none;
     }
     .carg_anima {
         left: 0;
         width: 80vw;
         top: 0;
+        position: unset;
+        height: 70vh;
     }
     .carg_anim {
         margin-top: 0;
+        height: 70vh;
+        position: unset;
+    }
+    .fl_vim {
+        width: 70vw;
+        left: 0;
     }
 }
 @media(max-width:816px){
+    .empty_form-submit {
+        font-size: 4vw;
+    } 
+    .man_im {
+        left: 9%;
+        top: 10px;
+    }
+    .fl_vim {
+        left: 0;
+    }
     .ar_ct_bx{
         flex-direction: column;
         align-items: center;
@@ -597,7 +701,6 @@
         min-width: none !important;
     }
     .extra_img {
-        height: 40vh;
         width: 60vw;
     }
     .right_side {
@@ -623,23 +726,19 @@
     .carg_anim {
         margin-top: 0;
     }
-    .extra_img {
-        margin-right: 60px;
-    }
     .fl_img {
         margin-right: 0;
     }
 }
 @media(max-width:600px){
-    input[type="submit"] {
-        padding: 15px;
-        font-size: 3.5vw;
+    .left_choice {
+        display: flex;
+        justify-content: space-between;
         width: 100%;
+        margin-top: 20px;
     }
-    #btn_non {
-        font-size: 4.5vw;
-        padding: 15px;
-        margin-bottom: 30px;
+    .left_choice-btn {
+        margin: 0;
     }
     .m_mt_vh{
         margin-top: 120vh;
@@ -764,8 +863,8 @@
     }
     .burger_list{
         display: flex;
-        align-items: center;
-        margin: 120px auto 0;
+        align-items: flex-start;
+        margin: 120px 0px 0px 15px;
     }
     .right_pos {
         margin-top: 6vw;
@@ -816,6 +915,10 @@
      .jet_img {
         width: 70vw;
         height: 70vw;
+     }
+     #air{
+        margin-bottom: 15px;
+        width: 200px;
      }
 }
 @media(max-width:480px){
