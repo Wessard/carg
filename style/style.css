@@ -763,14 +763,14 @@ input::-webkit-search-results-decoration {
 .swiper-button-prev {
   position: absolute;
   left: 48%;
-  top: 175%;
+  top: 58%;
   transform: rotate(180deg);
   width: 47px;
 }
 
 .swiper-button-next {
   position: absolute;
-  top: 175%;
+  top: 58%;
   right: 60px;
   width: 47px;
 }

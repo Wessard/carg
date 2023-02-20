@@ -267,11 +267,11 @@
         top: 25%;
     }
     .swiper-button-next {
-        top: 150%;
+        top: 50%;
         right: 70px;
      }
      .swiper-button-prev{
-        top: 150%;
+        top: 50%;
         left: 70px;
      }
     }
@@ -508,12 +508,12 @@
         display: none;
     }
     .swiper-button-next {
-        top: 150%;
+        top: 70%;
         width: 40px;
      }
      .swiper-button-prev{
         width: 40px;
-        top: 150%;
+        top: 70%;
      }
      .span_line,
      .span_th {
@@ -733,10 +733,14 @@
         margin-top: 21px;
     }
     .swiper-button-next {
+        top: 70%;
         width: 35px;
+        right: 30px;
      }
      .swiper-button-prev{
+        top: 70%;
          width: 35px;
+         left: 30px;
     }
     .right_side_img{
             margin-top: 80px;
@@ -914,13 +918,13 @@
         height: 5px;
     }
     .swiper-button-next {
-        top: 150%;
+        top: 70%;
         right: 0;
         width: 35px;
         position: absolute !important;
      }
      .swiper-button-prev{
-        top: 150%;
+        top: 70%;
         left: 0;
         width: 35px;
         position: absolute !important;
@@ -1035,13 +1039,13 @@
         margin-bottom: 0;
     }
     .swiper-button-next {
-        top: 100%;
+        top: 50%;
         right: 0;
         width: 35px;
         position: absolute !important;
      }
      .swiper-button-prev{
-        top: 100%;
+        top: 50%;
         left: 0;
         width: 35px;
         position: absolute !important;
@@ -1061,13 +1065,13 @@
         width: 3.5vw;
     }
     .swiper-button-next {
-        top: 90%;
+        top: 45%;
         right: 0;
         width: 35px;
         position: absolute !important;
      }
      .swiper-button-prev{
-        top: 90%;
+        top: 45%;
         left: 0;
         width: 35px;
         position: absolute !important;
