@@ -18,6 +18,9 @@
     }
 }
 @media(max-width:1600px){
+    .ept_wrap_bx {
+        grid-template-columns: repeat(2,1fr);
+    }
     .vip_text {
         color: blanchedalmond;
         z-index: 10;
@@ -357,6 +360,9 @@
     }
 }
 @media(max-width:1100px){
+    .ept_wrap_bx {
+        grid-template-columns: repeat(1,1fr);
+    }
     .ab_prev{
         top: 10%;
     }
@@ -764,6 +770,24 @@
     }
 }
 @media(max-width:600px){
+    .ept_wrap_bx {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .ept_wrap_card{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ept_bx {
+        align-items: center;
+        margin-top: 20px;
+    }
+    .ept_wrap_img {
+        width: 80vw;
+    }
     .vip_btn {
         margin-bottom: 20px;
     }
