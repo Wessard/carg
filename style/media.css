@@ -198,9 +198,7 @@
     }
     .jet_img {
         position: relative;
-        /* height: 100vh; */
         width: 50vw;
-        /* top: 180px; */
         left: 40px;
     }
     .main_wrap{
@@ -210,14 +208,7 @@
     .ex_img {
         top: 0;
     }
-     .swiper-button-next {
-        top: 20%;
-        right: 30px;
-     }
-     .swiper-button-prev{
-        top: 20%;
-        left: 30px;
-     }
+     
      .test {
         display: flex;
         justify-content: center;
@@ -275,6 +266,14 @@
     .ab_prev,.ab_next{
         top: 25%;
     }
+    .swiper-button-next {
+        top: 150%;
+        right: 70px;
+     }
+     .swiper-button-prev{
+        top: 150%;
+        left: 70px;
+     }
     }
 @media(max-width:1400px){
     .form_box {
@@ -460,10 +459,19 @@
     input[type="text"]{
         /* font-size: 3.5vw; */
         width: 200px;
+        height: 80px;
+        padding: 0;
     }
     input[type="date"]{
         /* font-size: 3.5vw; */
         width: 200px;
+        height: 80px;
+        padding: 0;
+    }
+    #air {
+        width: 200px;
+        height: 80px;
+        padding: 0;
     }
 
     .left_form{
@@ -500,10 +508,12 @@
         display: none;
     }
     .swiper-button-next {
+        top: 150%;
         width: 40px;
      }
      .swiper-button-prev{
         width: 40px;
+        top: 150%;
      }
      .span_line,
      .span_th {
@@ -904,13 +914,13 @@
         height: 5px;
     }
     .swiper-button-next {
-        top: 220px;
+        top: 150%;
         right: 0;
         width: 35px;
         position: absolute !important;
      }
      .swiper-button-prev{
-        top: 220px;
+        top: 150%;
         left: 0;
         width: 35px;
         position: absolute !important;
@@ -1024,7 +1034,18 @@
     .add{
         margin-bottom: 0;
     }
-
+    .swiper-button-next {
+        top: 100%;
+        right: 0;
+        width: 35px;
+        position: absolute !important;
+     }
+     .swiper-button-prev{
+        top: 100%;
+        left: 0;
+        width: 35px;
+        position: absolute !important;
+     }
 }
 @media(max-width:340px){
     .swiper-bt-prev{
@@ -1039,10 +1060,18 @@
         right: 45%;
         width: 3.5vw;
     }
-    /* .left_side{
-        margin-top: 40vh;
-        width: 80vw;
-     } */
+    .swiper-button-next {
+        top: 90%;
+        right: 0;
+        width: 35px;
+        position: absolute !important;
+     }
+     .swiper-button-prev{
+        top: 90%;
+        left: 0;
+        width: 35px;
+        position: absolute !important;
+     }
      .m_mt_vh{
         margin-top: 25vh;
      }

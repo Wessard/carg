@@ -698,14 +698,14 @@ input::-webkit-search-results-decoration { display: none; }
 .swiper-button-prev {
   position: absolute;
   left: 48%;
-  top: 40%;
+  top: 175%;
   transform: rotate(180deg);
   width: 47px;
 }
 .swiper-button-next {
   position: absolute;
-  top: 40%;
-  right: 100px;
+  top: 175%;
+  right: 60px;
   width: 47px;
 }
 .swiper-button-next:after, .swiper-button-prev:after {
