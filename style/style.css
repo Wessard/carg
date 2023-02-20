@@ -13,6 +13,11 @@
   outline: none !important;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -503,6 +508,7 @@ input::-webkit-search-results-decoration {
   transform: translate(2000px);
   transition: all 1.3s;
   visibility: hidden;
+  margin-bottom: 362px;
 }
 
 .jet_wrap._active {
