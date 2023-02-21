@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.vip_img'||null).addClass('_active')
   $('.jet_wrap' || null).addClass('_active')
   $('.avia_gr' || null).addClass('_active')
+  $('.jet_gr'||null).addClass('_active')
   let img = document.querySelector('.img_bg') || null;
   let left = document.querySelectorAll('.js_fade_left') || null;
   let right = document.querySelectorAll('.js_fade_right') || null;
@@ -194,8 +195,8 @@ var mySwiper5 = new Swiper(sliderSelector5, {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.li_gr .extra_next',
+    prevEl: '.li_gr .extra_prev',
   },
   scrollbar: {
     el: '.swiper-scrollbar',
@@ -209,8 +210,8 @@ var mySwiper6 = new Swiper(sliderSelector6, {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.vh .ab_next',
+    prevEl: '.vh .ab_prev',
   },
   scrollbar: {
     el: '.swiper-scrollbar',

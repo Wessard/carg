@@ -16,9 +16,19 @@
         left: 350px;
         top: -100px;
     }
+    .avia_gr {
+        padding-bottom: 347px;
+    }
 }
 @media(max-width:1600px){
-    
+    .avia_gr {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .jt_btn {
+        font-size: calc(1vw + 1px);
+    }
     .ept_wrap_bx {
         grid-template-columns: repeat(2,1fr);
     }
@@ -198,8 +208,9 @@
     }
     .jet_img {
         position: relative;
+        height: 100vh;
         width: 50vw;
-        left: 40px;
+        top: 180px;
     }
     .main_wrap{
         margin: 0 40px;
@@ -208,7 +219,14 @@
     .ex_img {
         top: 0;
     }
-     
+     .swiper-button-next {
+        top: 20%;
+        right: 30px;
+     }
+     .swiper-button-prev{
+        top: 20%;
+        left: 30px;
+     }
      .test {
         display: flex;
         justify-content: center;
@@ -223,7 +241,7 @@
         width: 60vw;
         right: 0;
         left: 250px;
-        margin-bottom: 70vh;
+        /* margin-bottom: 70vh; */
      }
      .taxi_jet {
         right: 0;
@@ -235,7 +253,7 @@
      }
     .m_mt_vh{
         align-items: center;
-        margin-top: 100vh;
+        /* margin-top: 100vh; */
     }
      .ab_gr {
         width: 80vw;
@@ -263,24 +281,32 @@
     .left_sp {
         font-size: 2.5vw;
     }
-    .ab_prev,.ab_next{
-        top: 25%;
+    .ab_prev{
+        position: absolute;
+        top: 22%;
+        left: 30px;
     }
-    .swiper-button-next {
-        top: 100%;
-        right: 70px;
-        width: 70px;
-     }
-     .swiper-button-prev{
-        top: 100%;
-        left: 70px;
-        width: 70px;
-     }
-     .biz_mt {
-        margin-top: 45vh;
-     }
+    .ab_next{
+        position: absolute;
+        top: 22%;
+        right: 80px;
     }
+    }
+@media(max-width:1490px){
+    .jt_sh_bx {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .jet_taxi-wrap {
+        align-items: center;
+    }
+    .jt_sh_card {
+        width: 500px;
+    }
+}
 @media(max-width:1400px){
+    
     .form_box {
         margin-bottom: 30px;
     }
@@ -304,8 +330,8 @@
         flex-wrap: wrap;
     }
     .avia_btn{
-    margin: 20px auto 20px;
-    padding: 15px;
+        margin: 20px auto 20px;
+        padding: 15px;
     }
     .left_sp {
         font-size: 2.5vw;
@@ -359,22 +385,19 @@
         width: 50vw;
         top: 0;
     }
-    .m_mt_vh{
+    /* .m_mt_vh{
         margin-top: 80vh;
-    }
+    } */
     .btn_non_inp {
         margin-right: 0;
     }
 }
 @media(max-width:1100px){
+    .table_last-btn{
+        width: 70%;
+    }
     .ept_wrap_bx {
         grid-template-columns: repeat(1,1fr);
-    }
-    .ab_prev{
-        top: 10%;
-    }
-    .ab_next{
-        top: 10%;
     }
     .carg_anim,.carg_anima {
         width: 80vw;
@@ -464,19 +487,10 @@
     input[type="text"]{
         /* font-size: 3.5vw; */
         width: 200px;
-        height: 80px;
-        padding: 0;
     }
     input[type="date"]{
         /* font-size: 3.5vw; */
         width: 200px;
-        height: 80px;
-        padding: 0;
-    }
-    #air {
-        width: 200px;
-        height: 80px;
-        padding: 0;
     }
 
     .left_form{
@@ -513,12 +527,10 @@
         display: none;
     }
     .swiper-button-next {
-        top: 100%;
-        width: 50px;
+        width: 40px;
      }
      .swiper-button-prev{
-        width: 50px;
-        top: 100%;
+        width: 40px;
      }
      .span_line,
      .span_th {
@@ -531,7 +543,7 @@
     }
     .av2{
         width: 70vw;
-        left: 10vw;
+        left: 3vw;
     }
     .img_media {
         width: 50vw;
@@ -548,11 +560,11 @@
         width: 80vw;
         top: 0;
         position: unset;
-        height: 70vh;
+        height: 40vh;
     }
     .carg_anim {
         margin-top: 0;
-        height: 70vh;
+        height: 40vh;
         position: unset;
     }
     .fl_vim {
@@ -561,6 +573,21 @@
     }
     .vip_btn {
         margin-bottom: 120px;
+    }
+    .ab_prev{
+        position: absolute;
+        top: 12%;
+        left: 30px;
+    }
+    .ab_next{
+        position: absolute;
+        top: 12%;
+        right: 30px;
+    }
+}
+@media(max-width:1000px){
+    .jt_sh_card {
+        margin: 40px 0 0 0;
     }
 }
 @media(max-width:816px){
@@ -637,9 +664,6 @@
     }
 }
 @media(max-width:764px){
-    .btn_all {
-        font-size: 0.5rem;
-    }
     .left_sp {
         font-size: 3.5vw;
     }
@@ -652,9 +676,9 @@
         right: -10px;
         transition: .5s;
       }
-    .m_mt_vh{
+    /* .m_mt_vh{
         margin-top: 50vh;
-     }
+     } */
     .ar_ct_title {
         font-size: 3.5vw;
     }
@@ -673,11 +697,10 @@
         width: 70vw;
     }
     .jet_img{
-        margin-top: 0 !important;
+        margin-top: 0 !important; 
         top: 0;
-        width: 70vw;
-        left: 0;
-        /* height: 55vh; */
+        width: 100vw;
+        height: 55vh;
     }
     .jet_form input[type=text], .jet_form input[type=number], .jet_form input[type=email], .jet_form input[type=tel] {
         font-size: 3.5vw;
@@ -709,7 +732,7 @@
     .tab_wrap {
         display: flex;
         justify-content: center;
-        margin: 0 auto 40px;
+        margin: 0 auto;
     }
     .menu_wrap {
         right: -178%;
@@ -738,14 +761,10 @@
         margin-top: 21px;
     }
     .swiper-button-next {
-        top: 100%;
         width: 35px;
-        right: 30px;
      }
      .swiper-button-prev{
-        top: 100%;
          width: 35px;
-         left: 30px;
     }
     .right_side_img{
             margin-top: 80px;
@@ -794,9 +813,6 @@
     .vip_btn {
         margin-bottom: 50px;
     }
-    .jet_tip {
-        font-size: 2.5vw;
-    }
 }
 @media(max-width:600px){
     .ept_wrap_bx {
@@ -820,10 +836,6 @@
         align-items: center;
         margin-top: 20px;
     }
-    .ept_wrap_img {
-        width: 70vw;
-        margin-right: 0;
-    }
     .vip_btn {
         margin-bottom: 20px;
     }
@@ -836,10 +848,10 @@
     .left_choice-btn {
         margin: 0;
     }
-    .m_mt_vh{
+    /* .m_mt_vh{
         margin-top: 120vh;
         width: 80vw;
-     }
+     } */
     .close_btn.active{
         width: 5.5vw;
         height: 5.5vw;
@@ -923,16 +935,16 @@
         height: 5px;
     }
     .swiper-button-next {
-        top: 100%;
+        top: 260px;
         right: 0;
         width: 35px;
-        position: absolute !important;
+        position: fixed !important;
      }
      .swiper-button-prev{
-        top: 100%;
+        top: 260px;
         left: 0;
         width: 35px;
-        position: absolute !important;
+        position: fixed !important;
      }
      .extra_prev {
         left: 0px;
@@ -1000,9 +1012,9 @@
     .left_span {
         text-align: center;
     }
-    .m_mt_vh{
+    /* .m_mt_vh{
         margin-top: 60vh;
-     }
+     } */
      .cargo_mt {
         margin-top: 0;
      }
@@ -1032,8 +1044,54 @@
         color: 
         #313C4E;
     }
-    .ept_wrap_card{
-        padding: 0;
+    .ab_prev{
+        position: absolute;
+        top: 12%;
+        left: 15px;
+    }
+    .ab_next{
+        position: absolute;
+        top: 12%;
+        right: 15px;
+    }
+    .jt_btn {
+        font-size: 2vw;
+    }
+    .jt_btn_wrp {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .jt_sh_bx {
+        justify-content: center;
+    }
+    .jt_sh_card {
+        flex-direction: column;
+        align-items: center;
+        width: 290px;
+    }
+    .jt_sh_spa {
+        font-size: 3vw;
+    }
+    .jt_bx {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80vw;
+        text-align: center;
+    }
+    .ept_span {
+        font-size: 15px;
+    }
+    .ept_date {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .jt_sh_sp{
+        font-size: 10px;
+    }
+    .jt_btn {
+        padding: 10px 12px;
     }
 }
 @media(max-width:480px){
@@ -1046,47 +1104,34 @@
     .add{
         margin-bottom: 0;
     }
-    .swiper-button-next {
-        top: 65%;
-        right: 0;
-        width: 35px;
-        position: absolute !important;
-     }
-     .swiper-button-prev{
-        top: 65%;
-        left: 0;
-        width: 35px;
-        position: absolute !important;
-     }
+    .ab_prev{
+        position: absolute;
+        top: 20%;
+        left: 0px;
+    }
+    .ab_next{
+        position: absolute;
+        top: 20%;
+        right: 0px;
+    }
+
 }
 @media(max-width:340px){
     .swiper-bt-prev{
         position: absolute;
-        top: 15%;
-        left: 40%;
-        width: 35px;
+        top: 20%;
+        left: 45%;
+        width: 3.5vw;
     }
     .swiper-bt-next{
         position: absolute;
-        top: 15%;
-        right: 40%;
-        width: 25px;
+        top: 20%;
+        right: 45%;
+        width: 3.5vw;
     }
-    .swiper-button-next {
-        top: 55%;
-        right: 0;
-        width: 35px;
-        position: absolute !important;
-    }
-     .swiper-button-prev{
-        top: 55%;
-        left: 0;
-        width: 35px;
-        position: absolute !important;
-    }
-     .m_mt_vh{
+     /* .m_mt_vh{
         margin-top: 25vh;
-     }
+     } */
      .img_media {
         left: 90px;
      }
