@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
   $('.jet_wrap' || null).addClass('_active')
   $('.avia_gr' || null).addClass('_active')
   $('.jet_gr'||null).addClass('_active')
+  $('.busavia'||null).addClass('active')
   let img = document.querySelector('.img_bg') || null;
   let left = document.querySelectorAll('.js_fade_left') || null;
   let right = document.querySelectorAll('.js_fade_right') || null;

@@ -1,3 +1,15 @@
+@media screen and (min-width: 960px) {
+    html {
+      margin-left: calc(100vw - 100%);
+      margin-right: 0;
+    }
+  }
+@media screen and (max-height: 800px) {
+    .menu_wrap {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+  }
 @media(max-width:1800px) {
     .av1 {
         width: 60%;
@@ -605,7 +617,8 @@
         margin-bottom: 80px;
     }
     .empty_form-submit {
-        font-size: 4vw;
+        font-size: 3vw;
+        padding: 10px;
     } 
     .man_im {
         left: 9%;
@@ -799,6 +812,7 @@
      }
      .av_bn {
          font-size: 4vw;
+         height: 35px;
      }
      .busavia {
         margin-top: 0;
@@ -946,13 +960,13 @@
         height: 5px;
     }
     .swiper-button-next {
-        top: 260px;
+        top: 200px;
         right: 0;
         width: 35px;
         position: fixed !important;
      }
      .swiper-button-prev{
-        top: 260px;
+        top: 200px;
         left: 0;
         width: 35px;
         position: fixed !important;
@@ -983,7 +997,7 @@
     .burger_list{
         display: flex;
         align-items: flex-start;
-        margin: 120px 0px 0px 15px;
+        margin: 50px 0px 0px 15px;
     }
     .right_pos {
         margin-top: 6vw;
