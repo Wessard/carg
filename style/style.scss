@@ -13,7 +13,7 @@
 }
 html,
 body{
-  height: 100%;
+  height: 100vh;
 }
 body {
   line-height: 1.5;
@@ -468,8 +468,8 @@ input::-webkit-search-results-decoration { display: none; }
 .carg_opa {
   transform: translate(2000px);
   transition: all 1.3s;
-  height: 100%;
-  overflow: visible;
+  // height: 100%;
+  overflow: hidden;
 }
 .carg_opa._active {
   transform: translate(0);

@@ -699,9 +699,9 @@
         right: -10px;
         transition: .5s;
       }
-    /* .m_mt_vh{
-        margin-top: 50vh;
-     } */
+    .cn_btn {
+        text-align: center;
+    }
     .ar_ct_title {
         font-size: 3.5vw;
     }
