@@ -13,12 +13,20 @@ document.querySelectorAll('.dropdown-toggle').forEach((el) => {
       if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
         clearTimeout(intervalId);
         document.querySelector(`[data-target=${menu}]`).classList.remove('menu_active')
+        
         intervalId = setTimeout(() => {
           document.querySelector(`[data-target=${menu}]`).classList.remove('open')
           document.querySelector(`[data-path=${menu}]`).classList.remove('active_st')
         }, 0)
       }
     });
+  })
+})
+
+document.querySelectorAll('.dropdown-toggle').forEach((el)=> {
+  let menub=document.querySelector('.menu_wrap')
+  el.addEventListener('click',function(){
+    menub.classList.toggle('active_ov')
   })
 })
 
@@ -58,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
           })
       })
     }
-  })
+  });
 
   $('.carg_opa' || null).addClass('_active')
   $('.main_gr' || null).addClass('_active')
@@ -86,16 +94,15 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 window.addEventListener('DOMContentLoaded', function () {
-  let home = document.getElementById('home') || null;
-  let non = document.getElementById('non') || null;
-  let none = document.getElementById('none') || null;
-  let back = document.getElementById('back') || null;
-  let btnN = document.getElementById('btn_none') || null;
-  let btnD = document.getElementById('btn_del') || null;
-  let btn_non = document.getElementById('btn_non') || null;
-  let form = document.querySelector('.left_form') || null;
-  // let left = document.querySelector('.left_side') || null;
-  let formB = document.querySelector('.form_box') || null;
+  let home = document.getElementById('home')||null;
+  let non = document.getElementById('non')||null;
+  let none = document.getElementById('none')||null;
+  let back = document.getElementById('back')||null;
+  let btnN = document.getElementById('btn_none')||null;
+  let btnD = document.getElementById('btn_del')||null;
+  let btn_non = document.getElementById('btn_non')||null;
+  let form = document.querySelector('.left_form')||null;
+  let formB = document.querySelector('.form_box')||null;
   if (home) {
     home.addEventListener('click', function () {
       back.classList.add('active');
@@ -107,7 +114,6 @@ window.addEventListener('DOMContentLoaded', function () {
       btnN.classList.remove('active');
       btn_non.classList.remove('active');
       btnD.classList.remove('active');
-      document.location.reload();
     })
     none.addEventListener('click', () => {
       btnN.classList.add('active');
@@ -125,8 +131,8 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     })
     btnD.addEventListener('click', (event) => {
-      const clickCount = event.target.dataset.clicks=~~event.target.dataset.clicks+1;
       formB.lastChild.remove()
+      const clickCount = event.target.dataset.clicks = ~~ event.target.dataset.clicks + 1;
       if (clickCount > 2) {
         btnD.setAttribute('disabled', 'true')
       }
@@ -135,7 +141,7 @@ window.addEventListener('DOMContentLoaded', function () {
 })
 
 
-/* ,..,..,..,..,..,Слайдер СвайперJS..,..,..,..,..,.., */
+/*,..,..,..,..,..,Слайдер СвайперJS..,..,..,..,..,..,*/
 var sliderSelector1 = document.querySelector(".mySwiper") || null;
 var sliderSelector2 = document.querySelector(".mySwiper2") || null;
 var sliderSelector3 = document.querySelector(".mySwiper3") || null;

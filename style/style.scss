@@ -215,11 +215,13 @@ input::-webkit-search-results-decoration { display: none; }
   width: 542px;
   background-color: #302F2F;
   transition: all 0.5s ease;
-  // overflow-block: auto;
-  // scroll-behavior: smooth;
 }
 .menu_wrap.active{
+  // display: none;
   right: 0;
+}
+.active_ov {
+  overflow: scroll;
 }
 /* AVIA */
 .avia_bg {

@@ -230,6 +230,10 @@ input::-webkit-search-results-decoration {
   right: 0;
 }
 
+.active_ov {
+  overflow: scroll;
+}
+
 /* AVIA */
 .avia_bg {
   background-image: url(../assets/city.png);
