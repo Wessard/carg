@@ -13,7 +13,8 @@
 }
 html,
 body{
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 body {
   line-height: 1.5;
@@ -242,9 +243,9 @@ input::-webkit-search-results-decoration { display: none; }
   position: relative;
   right: -60px;
 }
-// .av_bg {
-//   height: 100vh;
-// }
+.av_bg {
+  height: 100%;
+}
 .busavia {
   position:absolute;
   top: 200px;
@@ -1671,6 +1672,7 @@ fill: #000;
 .ept_wrap_img {
   margin-right: 24px;
   border-radius: 12px;
+  max-height: 500px;
 }
 .ept_bx {
   display: flex;
@@ -1689,6 +1691,10 @@ fill: #000;
 .ept_ways {
   display: flex;
   align-items: center;
+  justify-content: center;
+  max-width: 264px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .ept_time_wrap {
   display: flex;

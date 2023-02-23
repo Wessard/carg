@@ -15,7 +15,8 @@
 
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
 body {
@@ -253,6 +254,10 @@ input::-webkit-search-results-decoration {
 .test {
   position: relative;
   right: -60px;
+}
+
+.av_bg {
+  height: 100%;
 }
 
 .busavia {
@@ -1823,6 +1828,7 @@ input[type=text] {
 .ept_wrap_img {
   margin-right: 24px;
   border-radius: 12px;
+  max-height: 500px;
 }
 
 .ept_bx {
@@ -1845,6 +1851,10 @@ input[type=text] {
 .ept_ways {
   display: flex;
   align-items: center;
+  justify-content: center;
+  max-width: 264px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .ept_time_wrap {

@@ -29,9 +29,6 @@
         left: 350px;
         top: -100px;
     }
-    /* .avia_gr {
-        padding-bottom: 347px;
-    } */
 }
 @media(max-width:1600px){
     .jet_wrap {
@@ -212,9 +209,11 @@
     }
     .f_bl_r .swiper-btn-next {
         left: 100%;
+        top: 50%;
     }
     .f_bl_r .swiper-btn-prev {
         left: -25px;
+        top: 50%;
     }
     .f_bl_l {
         margin-left: 0;
@@ -229,9 +228,9 @@
     }
     .jet_img {
         position: relative;
-        height: 100vh;
+        height: 79vh;
         width: 50vw;
-        top: 180px;
+        top: 25px;
     }
     .main_wrap{
         margin: 0 40px;
@@ -611,6 +610,9 @@
     .jt_sh_card {
         margin: 40px 0 0 0;
     }
+    .hang_img {
+        max-width: 100vw;
+    }
 }
 @media(max-width:816px){
     .vip_btn {
@@ -839,7 +841,9 @@
     }
 }
 @media(max-width:600px){
-
+    .f_bl {
+        margin-top: 140px;
+    }
     .ept_wrap_bx {
         display: flex;
         align-items: center;
@@ -873,10 +877,6 @@
     .left_choice-btn {
         margin: 0;
     }
-    /* .m_mt_vh{
-        margin-top: 120vh;
-        width: 80vw;
-     } */
     .close_btn.active{
         width: 5.5vw;
         height: 5.5vw;
@@ -1081,7 +1081,8 @@
         right: 15px;
     }
     .jt_btn {
-        font-size: 2vw;
+        font-size: 3vw;
+        font-size: calc(16px + (16 - 8) * (100vw - 320px) / (1600 - 320));
     }
     .jt_btn_wrp {
         flex-wrap: wrap;
@@ -1146,18 +1147,21 @@
 
 }
 @media(max-width:340px){
-    .swiper-bt-prev{
+    .f_bl {
+        margin-top: 0;
+    }
+    /* .swiper-bt-prev{
         position: absolute;
         top: 20%;
         left: 45%;
-        width: 3.5vw;
+        width: 4.5vw;
     }
     .swiper-bt-next{
         position: absolute;
         top: 20%;
         right: 45%;
-        width: 3.5vw;
-    }
+        width: 4.5vw;
+    } */
      /* .m_mt_vh{
         margin-top: 25vh;
      } */
