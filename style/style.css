@@ -702,13 +702,9 @@ input::-webkit-search-results-decoration {
   right: 0;
 }
 
-.av1 {
-  width: 955px;
-  height: 330px;
-  right: -100px;
-  top: 50px;
-  position: absolute;
-  z-index: -2;
+.av3 {
+  width: 815px;
+  height: 815px;
 }
 
 .av2 {
@@ -1853,7 +1849,6 @@ input[type=text] {
   align-items: center;
   justify-content: center;
   max-width: 264px;
-  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -1992,4 +1987,129 @@ input[type=text] {
   line-height: 18px;
   color: #000000;
   margin-top: 9px;
+}
+
+/* POPUP */
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+  z-index: 100;
+}
+
+.popup__bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.open-popup {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 1000px;
+  padding: 25px;
+  transition: 0.5s all;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #00AFEF;
+}
+
+.popup label {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.popup .label__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cfd0d3;
+  margin-bottom: 5px;
+  font-family: "Gilroy-Semibold";
+}
+
+.popup input {
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cfd0d3;
+  font-family: "Gilroy-Regular";
+}
+
+.popup input:focus {
+  border-bottom: 1px solid #2982ff;
+}
+
+.popup input:focus + .label__text {
+  color: #2982ff;
+}
+
+.popup textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  padding-top: 5px;
+  font-family: "Gilroy-Light";
+}
+
+.popup textarea:focus {
+  border-bottom: 1px solid #00AFEF;
+}
+
+.popup textarea:focus + .label__text {
+  color: #00AFEF;
+}
+
+.popup button {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  border: 2px solid #00AFEF;
+  background: #00AFEF;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s all;
+  font-family: "Gilroy-Regular";
+}
+
+.popup button:hover {
+  background: #fff;
+  color: #00AFEF;
+  transition: 0.5s all;
 }/*# sourceMappingURL=style.css.map */

@@ -93,6 +93,29 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+  /* POPUP */
+  let popupBg = document.querySelector('.popup__bg') || null;
+  let popup = document.querySelector('.popup') || null;
+  let openPopupButtons = document.querySelectorAll('.pop_btn') || null;
+  let closePopupButton = document.querySelector('.close-popup');
+  openPopupButtons.forEach((button) => {
+    button.addEventListener('click', (e) => { 
+        e.preventDefault()
+        popupBg.classList.add('active');
+        popup.classList.add('active');
+    })
+  });
+  closePopupButton.addEventListener('click',() => { 
+    popupBg.classList.remove('active');
+    popup.classList.remove('active');
+  });
+  document.addEventListener('click', (e) => {
+    if(e.target === popupBg) {
+        popupBg.classList.remove('active');
+        popup.classList.remove('active');
+    }
+  });
+
 window.addEventListener('DOMContentLoaded', function () {
   let home = document.getElementById('home')||null;
   let non = document.getElementById('non')||null;
@@ -140,9 +163,8 @@ window.addEventListener('DOMContentLoaded', function () {
   }
 })
 
-
 /*,..,..,..,..,..,Слайдер СвайперJS..,..,..,..,..,..,*/
-var sliderSelector1 = document.querySelector(".mySwiper") || null;
+var sliderSelector1 = document.querySelector(".mySwiper")  || null;
 var sliderSelector2 = document.querySelector(".mySwiper2") || null;
 var sliderSelector3 = document.querySelector(".mySwiper3") || null;
 var sliderSelector4 = document.querySelector(".mySwiper4") || null;
@@ -200,6 +222,7 @@ var mySwiper5 = new Swiper(sliderSelector5, {
   fadeEffect: {
     crossFade: true
   },
+  allowTouchMove: false,
 
   navigation: {
     nextEl: '.li_gr .extra_next',
@@ -225,6 +248,7 @@ var mySwiper6 = new Swiper(sliderSelector6, {
   },
 });
 
+
 window.onload = function() {
   var body = document.querySelector('body');
   var links = document.querySelectorAll('a');  
@@ -243,3 +267,4 @@ window.onload = function() {
     }
   });
 }
+

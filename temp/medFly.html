@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/media.css">
 </head>
+<div class="popup__bg"> 
+  <form class="popup">
+      <img src="../assets/burger-close.png" class="close-popup">
+      <label>
+          <input type="text" name="name">
+          <div class="label__text">
+              Ваше имя
+          </div>
+      </label>
+      <label>
+          <input type="tel" name="tel">
+          <div class="label__text">
+              Ваш телефон
+          </div>
+      </label>
+      <label>
+          <textarea name="message">asd</textarea>
+          <div class="label__text">
+              Ваше сообщение
+          </div>
+      </label>
+      <button type="submit">Отправить</button>
+  </form>
+</div>
 <body class="med_bg">
     <header class="header container">
         <div class="main_wrap">
@@ -169,7 +193,7 @@
                     <input class="empty_form-input" type="number" name="amount_people" placeholder="Сколько лежачих">
                     <input class="empty_form-input" id="tel" type="tel" name="call" placeholder="Номер телефона" pattern="2[0-9]{3}-[0-9]{3}">
                   </form> -->
-                  <input class="empty_form-submit" type="submit" value="ОБРАТНАЯ СВЯЗЬ С КОММЕРЧЕСКИМ ОТДЕЛОМ" name="accept">
+                  <input class="empty_form-submit pop_btn" type="submit" value="ОБРАТНАЯ СВЯЗЬ С КОММЕРЧЕСКИМ ОТДЕЛОМ" name="accept">
         </div>
         <div class="empty_right">
             <img src="../assets/medImg.png" alt="" class="right_side_img empty_img">
